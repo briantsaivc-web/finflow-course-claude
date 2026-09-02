@@ -1,0 +1,12 @@
+# GitHub Pages 文件網站設定(Jekyll,GitHub 原生支援,不需要任何建置工具)
+title: 我不會寫程式,但我用 AI 做出了一套多人連線遊戲
+description: 從一頁需求到一款遊戲 —— 小白也能上手的 AI 產品實作課
+theme: jekyll-theme-cayman
+lang: zh-Hant
+show_downloads: false
+exclude:
+  - tools/
+  - samples/
+  - notes/
+  - README.md
+  - CHANGELOG.md
