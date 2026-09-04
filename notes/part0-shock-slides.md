@@ -2,114 +2,172 @@
 marp: true
 theme: default
 paginate: true
-header: "FinFlow 實戰課程 | 第零部・震撼彈：這件事真的做得到"
+header: "FinFlow 實戰心法"
 style: |
-  section.appendix {
-    background-color: #f8fafc;
-    border-left: 8px solid #94a3b8;
+  section {
+    background: #ffffff;
+    color: #111827;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", sans-serif;
+    padding: 50px 70px;
+    font-size: 26px;
   }
-  .highlight {
-    color: #2563eb;
-    font-weight: bold;
+  h1 {
+    font-size: 2rem;
+    color: #111827;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
   }
+  .lead {
+    font-size: 1.3rem;
+    color: #1d4ed8;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .highlight { color: #b91c1c; font-weight: bold; }
+  .grid {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+    align-items: center;
+  }
+  .box {
+    flex: 1;
+    border: 2px solid #111827;
+    padding: 16px;
+    text-align: center;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+  .box.blue { border-color: #1d4ed8; background: #eff6ff; }
+  .box.red { border-color: #b91c1c; background: #fef2f2; }
+  .arrow { font-size: 24px; font-weight: bold; color: #1d4ed8; }
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 22px; }
+  th { border-bottom: 2px solid #111827; text-align: left; padding: 10px; }
+  td { border-bottom: 1px solid #e5e7eb; padding: 10px; }
 ---
 
 <!-- 第 3 頁 -->
-# 你即將學會的事
-## 用 AI 把一個「想法」，做成「能玩的東西」
+# 重新定義造物者
 
-> 不是學會寫程式碼，而是學會當一個指揮 AI 施工的「產品造物者」。
+<div class="lead">你不是在學寫程式，你是在學指揮工程隊。</div>
 
-- **你負責**：出點子、定規則、看結果、做裁決
-- **AI 負責**：刻代碼、調版面、抓臭蟲、寫規格
-- **最終成果**：不用工程團隊，你也能獨立做出可多人連線的完整產品
+<div class="grid">
+  <div class="box blue"><strong>人類決策者</strong><br>出題目・定規格・做裁決</div>
+  <div class="arrow">➔</div>
+  <div class="box"><strong>自然語言</strong><br>SODA 互動・白話描述</div>
+  <div class="arrow">➔</div>
+  <div class="box red"><strong>AI 施工隊</strong><br>刻程式・調版面・修 Bug</div>
+</div>
+
+- **核心承諾**：不懂代碼，也能獨立產出多人連線遊戲
 
 ---
 
 <!-- 第 4 頁 -->
-# 7/16 到 8/30：FinFlow 真實開發時間軸
+# 開發時程的真相
 
-| 時間節點 | 關鍵里程碑 | 階段成果與意義 |
+<div class="lead">小步快跑，五天完成二十次疊代。</div>
+
+| 日期 | 里程碑 | 實質進展 |
 | :--- | :--- | :--- |
-| **7/16** | **一頁規格書** | 從生活痛點出發，把模糊概念落成文字草案 |
-| **7/24** | **三份核心草案** | 確立遊戲機制、卡片類別與資料架構 |
-| **8/25** | **正式開工** | 啟動密集疊代，單人核心玩法成型 |
-| **8/27** | **多人連線草案** | 完成 M12 多人同步架構設計（待核可才動工） |
-| **8/30** | **達成 S20 里程碑** | 5 天 20 次疊代，完整多人連線版落地可玩 |
+| **7/16** | 一頁規格書 | 釐清核心痛點，定義玩法邊界 |
+| **8/25** | 正式動工 | 核心邏輯成型，單人版試跑 |
+| **8/27** | 多人同步草案 | 設計 M12 鎖步架構，待核可才動工 |
+| **8/30** | S20 里程碑 | 5 天 20 次疊代，多人連線完整落地 |
 
 ---
 
 <!-- 第 5 頁 -->
-# 一頁規格書長什麼樣？
-### 動手寫程式之前，你只需要這張紙
+# 動手前的第一步
 
-- **產品名稱**：FinFlow（現金流模擬與財商訓練遊戲）
-- **核心承諾**：讓玩家在 15 分鐘內體驗真實社會的金錢決策
-- **目標受眾**：沒學過會計、但想搞懂真實金流的新手
-- **動手前提**：
-  1. 不需要先畫精美 UI
-  2. 不需要先架設伺服器
-  3. 用大白話列出「遊戲有哪些角色、怎麼算贏」
+<div class="lead">工欲善其事，先立一頁規格書。</div>
+
+<div class="grid">
+  <div class="box"><strong>01 核心受眾</strong><br>誰在玩？有何財務痛點？</div>
+  <div class="box blue"><strong>02 遊戲迴圈</strong><br>擲骰 ➔ 事件 ➔ 決策 ➔ 結算</div>
+  <div class="box red"><strong>03 勝利條件</strong><br>固定 15 輪後誰資產多？</div>
+</div>
+
+- **不開設計軟體**、**不架伺服器**，一張紙就能定案
 
 ---
 
 <!-- 第 6 頁 -->
-# 5 天 20 次疊代是怎麼發生的？
-### S1 到 S20 清單快閃：小步快跑的節奏
+# 疊代的節奏感
 
-- **S1~S5（打底期）**：單人版輪盤、薪水發放、最基礎記帳
-- **S6~S10（除錯期）**：修正 NaN 數值異常、清理介面怪符號
-- **S11~S15（擴充期）**：引入多人連線鎖步機制、解決雙方死結 bug
-- **S16~S20（收尾期）**：三欄動態版面重整、新手教學導覽
+<div class="lead">沒有一次到位的神作，只有極速修正的日常。</div>
 
-> **關鍵啟示**：沒有一次到位的神作，只有每天改 4 次的極速修正。
+<div class="grid">
+  <div class="box"><strong>S1～S5</strong><br>打底核心機制</div>
+  <div class="arrow">➔</div>
+  <div class="box blue"><strong>S6～S10</strong><br>除錯與數值校正</div>
+  <div class="arrow">➔</div>
+  <div class="box red"><strong>S11～S15</strong><br>連線同步鎖步</div>
+  <div class="arrow">➔</div>
+  <div class="box"><strong>S16～S20</strong><br>版面重整收尾</div>
+</div>
+
+- 每天推進 4 期，每次只攻克一個小主題
 
 ---
 
 <!-- 第 7 頁 -->
-# 這不是「AI 自動生成遊戲」
-### 核心本質：你決策、AI 動手的精密分工
+# 協作的邊界
 
-- ❌ **誤解**：對 AI 說「幫我做個像大富翁的遊戲」，然後期待奇蹟
-- ⭕ **真相**：
-  1. **AI 沒有商業直覺**：它不知道台灣房租投報率多少才合理，你才知道
-  2. **AI 會隨意妥協**：遇到難題它會偷改你的規則，你必須當審核者
-  3. **你的價值在於「裁決」**：當 AI 提出三種方案，決定走哪條路的人是你
+<div class="lead">AI 負責提供選項，人類負責下達裁決。</div>
+
+<div class="grid">
+  <div class="box"><strong>遭遇技術瓶頸</strong><br>多人同步卡死異常</div>
+  <div class="arrow">➔</div>
+  <div class="box blue"><strong>AI 提供 3 種解法</strong><br>方案 A / B / C 優劣比較</div>
+  <div class="arrow">➔</div>
+  <div class="box red"><strong class="highlight">你的裁決</strong><br>守住鐵律，拍板路線</div>
+</div>
+
+- 失去裁決權，產品走向就會被 AI 帶偏
 
 ---
 
 <!-- 第 8 頁 -->
-# 這堂課會用什麼貫穿全程？
-### 不講完美範例，只講 FinFlow 的「踩坑與死結」
+# 最貴的經驗
 
-我們全程拆解真實開發時留下的工程書與決策記錄：
-- **血淚一**：新創面板為什麼會跳出 `NaN`（數值未定義）？
-- **血淚二**：多人連線時畫面為什麼突然卡死（Deadlock 死結）？
-- **血淚三**：手機螢幕縮放時，輪盤版面整個飄掉怎麼救？
-- **學習價值**：看別人怎麼解決 bug，比看一行漂亮的代碼有用十倍。
+<div class="lead">不看漂亮的程式碼，只拆真實踩過的坑。</div>
+
+<div class="grid">
+  <div class="box red"><strong>數值崩潰</strong><br>面板出現 NaN<br><i>型態未檢查</i></div>
+  <div class="box red"><strong>雙向卡死</strong><br>多人連線死結<br><i>狀態未同步</i></div>
+  <div class="box red"><strong>排版飄移</strong><br>螢幕縮放跑版<br><i>Zoom 倍率失真</i></div>
+</div>
+
+- 真實踩坑與工程除錯紀錄，就是最核心的教學資產
 
 ---
 
 <!-- 第 9 頁 -->
-# 完成這堂課，你會做出什麼？
-### 「FinFlow 極簡版」可運作遊戲
+# 讀者的落地產出
 
-- **遊戲規模**：1 個人類玩家 ＋ 1 位電腦對手
-- **遊戲時長**：固定 15 輪決策（代表真實世界 15 個月）
-- **核心內容**：6 張職業卡 ＋ 10 張事件卡 ＋ 1 個小額投資決策點
-- **結算標準**：全自動記帳，最後比較「現金 ＋ 投資估值」
-- **免費上線**：直接部署到 GitHub Pages，丟出網址就能讓朋友玩
+<div class="lead">做出一個能跑、能玩、能發布的極簡產品。</div>
+
+<div class="grid">
+  <div class="box blue"><strong>對戰架構</strong><br>1 位人類玩家 vs 1 電腦對手</div>
+  <div class="arrow">➔</div>
+  <div class="box"><strong>15 輪推進</strong><br>6 職業 + 10 事件 + 1 投資點</div>
+  <div class="arrow">➔</div>
+  <div class="box red"><strong>勝負裁決</strong><br>比較現金與投資估值總額</div>
+</div>
+
+- 跑滿 15 輪全自動記帳，直接部署至 GitHub Pages 免費玩
 
 ---
 
 <!-- 第 10 頁 -->
-# 開始之前：心態盤點
+# 出發前的認知
 
-| 你完全不需要會的事 | 你真正需要具備的事 |
+<div class="lead">放下技術恐懼，帶上你的邏輯即可。</div>
+
+| 你完全不需要 | 你真正需要具備 |
 | :--- | :--- |
-| ❌ 不需要先花錢訂閱付費 AI 工具 | ✅ 願意用白話文清楚描述你的想法 |
-| ❌ 不需要糾結挑選唯一一套完美工具 | ✅ 當畫面怪怪的，能截圖指出哪裡錯 |
-| ❌ 不需要懂任何程式語言（JS/HTML） | ✅ 動手前先守住三條不准動的鐵律 |
-| ❌ 不需要會背任何 Git 終端機指令 | ✅ 敢於跟 AI 來回討論、要求修改 |
-
-> **你已經具備所有需要的工具，現在只差開始。**
+| 先買昂貴的付費帳號 | 清楚具體地描述你的需求 |
+| 精通任何程式語言（JS/HTML） | 遇到異常畫面能截圖指出問題 |
+| 記憶複雜的終端機 Git 指令 | 守住三條不准妥協的底線鐵律 |
