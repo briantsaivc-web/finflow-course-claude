@@ -13,7 +13,24 @@ layout: default
 
 ## 章節
 
-- [把你的作品放上網:GitHub 三步驟實戰](chapters/github-tutorial.html) —— 建立 Repository → 用指令推上去 → 開 GitHub Pages(全程實機截圖)
+
+
+<ul>
+  <li><a href="./notes/part0-shock-slides.md">第零部・震撼：這不是玩具，這是真正能跑的軟體 (頁 3-10)</a></li>
+  <li><a href="./notes/part1-mindset-slides.md">第一部・心法：想法怎麼來 (頁 11-22)</a></li>
+  <li><a href="./notes/part1-card-growth-slides.md">第一部・案例：卡片深度演進與行動清單 (頁 23-31)</a></li>
+  <li><a href="./notes/part2-ai-partners-slides.md">第二部・工具：挑選 AI 夥伴與協作起手 (頁 32-39)</a></li>
+  <li><a href="./notes/part2-habits-and-prompts-slides.md">第二部・習慣：四習慣落地與發想指令 (頁 40-46)</a></li>
+  <li><a href="./notes/part2-git-and-techstack-slides.md">第二部・基建：GitHub、Firebase 與單檔架構 (頁 47-53)</a></li>
+  <li><a href="./notes/part2-advanced-tactics-slides.md">第二部・實戰：模型分工與截圖除錯 (頁 54-58)</a></li>
+  <li><a href="./notes/part2-ai-scope-control.md">實戰專題・AI 協作邊界管理（要五毛給一塊的雙面刃）</a></li>
+  <li><a href="./notes/part3-five-days-sprint-slides.md">第三部・實作：5 天衝刺與核心機制落地 (頁 59-66)</a></li>
+  <li><a href="./notes/part3-debugging-and-balance-slides.md">第三部・實作：真實踩坑排查與千局平衡實測 (頁 67-72)</a></li>
+  <li><a href="./notes/part3-dara-case-study.md">實戰專題・DARA 數據治理實例</a></li>
+  </ul>
+  
+  - [把你的作品放上網:GitHub 三步驟實戰](chapters/github-tutorial.html) —— 建立 Repository → 用指令推上去 → 開 GitHub Pages(全程實機截圖)
+
 - (其餘章節依大綱陸續加入)
 
 ## 怎麼用這個網站
@@ -24,4 +41,4 @@ layout: default
 
 ---
 
-線上版最後更新:2026-09-02
+線上版最後更新:2026-09-05
