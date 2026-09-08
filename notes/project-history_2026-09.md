@@ -85,3 +85,13 @@ Brian 看到 Claude 交付 zip 後問:用 VS Code 會不會比 cmd 的 add/commi
 - 14 份 md 的 frontmatter 移除內嵌 style、改為 `theme: finflow-clean`；Brian 選定 A。deck-test.md 原本 `.highlight` 是藍色，統一為紅色（紅＝警示）；`section.appendix` 併入主題保留。
 - 換樣板＝改一行 `theme:`。`themes/README.md` 記錄四套差異、頁面寫法（`_class: title`／`appendix`、lead／grid／box／highlight）與匯出指令。
 - 驗證：part1-mindset、part3-five-days、deck-test 逐頁渲染確認；part2 與 part6 的 pptx 用 `--theme-set themes` 重渲（11／10 頁）。備份於 `_backup_theme_20260908/`。
+
+## 12. 頁32-39 補做、slides/ 上線、index 全面改連結（2026-09-08）
+- **發現並修復**：`notes/part2-ai-partners-slides.md`（index 標「頁 32-39」）內容是 `part1-card-growth-slides.md` 的複製品——9 頁標題一字不差、頁碼註解都是「第 23 頁」到「第 31 頁」，唯一差別是 28 處 `[cite: 2]` 被清掉。即頁 32-39 從未製作，讀者從 Pages 點進去看到的是卡片演進。已重寫為 8 頁正式內容。
+- 內容取捨：頁32-33 主軸「三選一就好」，不比強弱、不寫價格額度；頁34 把「免費版可行」具體化成本課程要做的六件事逐項打勾，並點明免費版限制是用量不是功能；頁35 三個付費情境全部是「已經在做事才會遇到」；頁37 四習慣四宮格；頁38 用本 repo 大綱 v1.0(102頁)→v1.4(134頁) 的真實演進表當案例，出處 `notes/project-history_2026-09.md`。
+- **查證（頁39 即時互動產出）**：ChatGPT 的 canvas 已改名，官方 canvas 說明頁 404，現行官方文件為 writing blocks／code blocks；Gemini 為 Canvas；Claude 為 Artifacts。免費可用：Claude 官方說明明列 Free 方案可用；Gemini 與 ChatGPT 官方頁未載明方案差異（查無紀錄，非來源不可得）。查證日期 2026-09-08，投影片上標明名稱會變、以介面文字為準。
+- 清理：刪除 `notes/deck-test.md`（頁 3-10 舊重複版，與 part0-shock 撞範圍，Brian 同意刪除）；`part1-card-growth-slides.md` 清掉 30 處 cite 標記（含兩處 `[cite: 1, 2]` 格式）。
+- **新增 `slides/`**：`marp --html` 產生 13 份投影片 HTML 給 GitHub Pages 讀者。原本 index 的連結全部指向 `github.com/.../blob/main/notes/*.md`（GitHub 原始碼檢視，讀者看到裸露的 markdown 與 HTML 標籤），且 `_config.yml` 的 exclude 含 `notes/`，Pages 根本不發布。`slides/` 不在 exclude 內，靜態 HTML 由 Jekyll 原樣送出。
+- 把兩份 deck 的 ✅❌ 改成 ✓✕：marp-core 會把 emoji 轉成 jsdelivr CDN 的 twemoji `<img>`，改用非 emoji 字元後 13 份 HTML 全部零外部相依（part2-vscode 的 5 張截圖走 `../images/`，站內路徑，Pages 有發布 images/）。
+- index.md 全面改寫：連結改指 `slides/*.html`、依部別分組、補上第六部與第二部補充、補上 `chapters/vscode-option.html` 與 `chapters/ai-cross-review.html`（先前未掛）、加「左右鍵翻頁／列印存 PDF」說明。18 個連結逐一驗證目標檔案存在。
+- 自驗：8 頁逐頁 PNG 檢視；HTML 用 headless Chromium 開啟確認為全螢幕投影片、方向鍵可翻頁、A 版型正確套用。
