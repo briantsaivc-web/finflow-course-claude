@@ -8,5 +8,6 @@ exclude:
   - tools/
   - samples/
   - notes/
+  - outline/          # 歷史底稿，實際口徑以 slides/ 為準，不對外發佈
   - README.md
   - CHANGELOG.md
