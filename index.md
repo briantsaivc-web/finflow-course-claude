@@ -46,12 +46,13 @@ layout: default
 ### 第四部・讀者實作題：做出你的 FinFlow 極簡版
 
 - [定案規格與 Step1 提示詞](slides/part4-spec-and-prompts-slides.html)（頁 109-116）
+- [做出來、測過、上架：四份可複製的提示詞](slides/part4-build-and-ship-slides.html)（頁 117-124）
 
 ### 第六部・讓 AI 互相抓錯
 
 - [交叉審查與實證裁決](slides/part6-ai-cross-review-slides.html)
 
-（第四部後半、第五部結語陸續加入）
+（第五部結語陸續加入）
 
 ## 實作章節（圖文版）
 
