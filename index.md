@@ -94,7 +94,7 @@ layout: default
   <h3>第五部・結語</h3>
   <p class="sub">帶得走的心法與資源包</p>
   <ul>
-    <li><a href="slides/part5-closing-slides.html">五個心法、兩個進階方向、你已經是造物者</a> <span class="pg">頁 125–134</span></li>
+    <li><a href="slides/part5-closing-slides.html">五個心法（＋第六條）、兩個進階方向、你已經是造物者</a> <span class="pg">頁 125–134</span></li>
   </ul>
 </div>
 
