@@ -37,13 +37,14 @@ layout: default
 
 - [5 天衝刺與核心機制落地](slides/part3-five-days-sprint-slides.html)（頁 59-66）
 - [真實踩坑排查與千局平衡實測](slides/part3-debugging-and-balance-slides.html)（頁 67-72）
+- [疊代節奏與 UI 演進：冰山水面下的那 90%](slides/part3-iteration-and-ui-slides.html)（頁 73-85）
 - [實戰專題：DARA 數據治理實例](slides/part3-dara-case-study.html)
 
 ### 第六部・讓 AI 互相抓錯
 
 - [交叉審查與實證裁決](slides/part6-ai-cross-review-slides.html)
 
-（第三部後半、第四部讀者實作題、第五部結語陸續加入）
+（第三部剩餘章節、第四部讀者實作題、第五部結語陸續加入）
 
 ## 實作章節（圖文版）
 
