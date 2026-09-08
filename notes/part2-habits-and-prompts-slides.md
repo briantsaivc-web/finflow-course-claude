@@ -76,12 +76,13 @@ header: "FinFlow 實戰心法 | 第二部・地基與工具"
   </div>
   <div class="arrow">➔</div>
   <div class="box red">
-    <strong>S20～S29</strong><br>
-    平衡實測與系統盤點
+    <strong>S20～S44</strong><br>
+    平衡實測、架構重構、內容擴充
   </div>
 </div>
 
 - 每次疊代推進一個版號，出問題隨時知道該退回哪一個存檔點
+- 目前累計 <b>74 份</b>變更說明、版號走到 <b>v2.52.0</b>——<span class="highlight">編號本身就是一部開發史</span>
 
 ---
 
