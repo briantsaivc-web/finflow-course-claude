@@ -34,3 +34,10 @@ img { border: 1px solid #334155; border-radius: 8px; }
 section.title { display: flex; flex-direction: column; justify-content: center; }
 section.title h1 { font-size: 2.6rem; border: none; }
 section.title p { font-size: 1.3rem; color: #94a3b8; }
+
+/* 密集頁（長提示詞、長程式碼）：<!-- _class: dense --> */
+section.dense { font-size: 22px; }
+section.dense h1 { font-size: 1.65rem; margin-bottom: 10px; padding-bottom: 6px; }
+section.dense .lead { font-size: 1.05rem; margin-bottom: 12px; }
+section.dense pre { font-size: 14.5px; line-height: 1.38; padding: 12px 14px; margin: 6px 0; }
+section.dense ul, section.dense ol { font-size: 20px; margin-top: 6px; }

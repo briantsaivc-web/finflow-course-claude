@@ -43,11 +43,15 @@ layout: default
 - [收尾與本部小結：什麼時候能說「能分享了」](slides/part3-shipping-and-wrap-slides.html)（頁 102-108）
 - [實戰專題：DARA 數據治理實例](slides/part3-dara-case-study.html)
 
+### 第四部・讀者實作題：做出你的 FinFlow 極簡版
+
+- [定案規格與 Step1 提示詞](slides/part4-spec-and-prompts-slides.html)（頁 109-116）
+
 ### 第六部・讓 AI 互相抓錯
 
 - [交叉審查與實證裁決](slides/part6-ai-cross-review-slides.html)
 
-（第四部讀者實作題、第五部結語陸續加入）
+（第四部後半、第五部結語陸續加入）
 
 ## 實作章節（圖文版）
 

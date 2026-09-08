@@ -36,3 +36,10 @@ section.title p { font-size: 1.3rem; color: #4b5563; }
 /* 附錄／補充頁：<!-- _class: appendix --> */
 section.appendix { background: #f8fafc; border-left: 8px solid #94a3b8; }
 /* 章名頁：<!-- _class: title --> 已定義於上方 */
+
+/* 密集頁（長提示詞、長程式碼）：<!-- _class: dense --> */
+section.dense { font-size: 22px; }
+section.dense h1 { font-size: 1.65rem; margin-bottom: 10px; padding-bottom: 6px; }
+section.dense .lead { font-size: 1.05rem; margin-bottom: 12px; }
+section.dense pre { font-size: 14.5px; line-height: 1.38; padding: 12px 14px; margin: 6px 0; }
+section.dense ul, section.dense ol { font-size: 20px; margin-top: 6px; }
