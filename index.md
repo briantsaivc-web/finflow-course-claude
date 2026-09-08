@@ -48,11 +48,15 @@ layout: default
 - [定案規格與 Step1 提示詞](slides/part4-spec-and-prompts-slides.html)（頁 109-116）
 - [做出來、測過、上架：四份可複製的提示詞](slides/part4-build-and-ship-slides.html)（頁 117-124）
 
+### 第五部・結語與資源包
+
+- [五個心法、兩個進階方向、你已經是造物者](slides/part5-closing-slides.html)（頁 125-134）
+
 ### 第六部・讓 AI 互相抓錯
 
 - [交叉審查與實證裁決](slides/part6-ai-cross-review-slides.html)
 
-（第五部結語陸續加入）
+主體 134 頁到齊。序與見證的投影片版另行補上。
 
 ## 實作章節（圖文版）
 
