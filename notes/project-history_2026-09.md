@@ -49,3 +49,13 @@ Brian 指示正式成立專案 `finflow-course-claude`:本地資料夾 + GitHub 
 - 卡片深度案例(頁 23-28)待 Brian 定案真實版本後補出處
 - Git for Windows 安裝精靈截圖、第一次 push 登入視窗截圖:待補
 - 其餘 130 餘頁的章節內容:依骨架逐章產出
+
+## 7. 第六部（獨立章節）「讓 AI 互相抓錯」(2026-09-08)
+
+Brian 提問:把 AI 寫的程式交給另外兩個 AI 審查、再交回原 AI 問是否同意、來回兩輪取得共識後才改——這在原理上能否證明有效?有沒有專有名詞?能否進日常開發流程與教案?
+
+Claude 回答並經 Brian 定案:有名字(IV&V、四眼原則、Fagan 審查、N 版本程式設計、多智能體辯論);原理上成立(孔多塞陪審團定理)但兩個前提在 AI 上有坑(Knight & Leveson 1986 錯在同處;Sharma 2023 趨同偏誤);真正有效的核心是「實證裁決」不是「共識」。案例全部取自 S42(Gemini 五項)與 S43(ChatGPT 四項,含 ChatGPT 糾正 Claude 兩點)。
+
+決策:先做獨立最後章節,不併入 134 頁主骨架,Brian 整理時再 merge;TA 程式小白、全章無程式碼;AI 用真名;文獻僅查出處確認,不做文獻探討。
+
+產出:`outline/part6-ai-cross-review_outline_v1.0.md`(12 頁骨架,暫編 135-146)、`notes/part6-ai-cross-review-slides.md`(Marp 12 頁)、`chapters/ai-cross-review.md`(書籍版全文)、`samples/part6-ai-cross-review_slides_sample.pptx`(Marp CLI 渲染)。
