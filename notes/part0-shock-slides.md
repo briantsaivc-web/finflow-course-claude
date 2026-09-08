@@ -66,7 +66,7 @@ header: "FinFlow 實戰心法"
   <div class="arrow">➔</div>
   <div class="box"><strong>S16～S20</strong><br>版面重整收尾</div>
   <div class="arrow">➔</div>
-  <div class="box blue"><strong>S22～S44</strong><br>架構重構與內容擴充</div>
+  <div class="box blue"><strong>S21～S44</strong><br>架構重構與內容擴充</div>
 </div>
 
 - 衝刺期每天推進 8 期以上，每次只攻克一個小主題
