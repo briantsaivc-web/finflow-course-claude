@@ -1,17 +1,8 @@
 ---
 marp: true
-theme: default
+theme: finflow-clean
 paginate: true
 header: "FinFlow 實戰課程 | 第零部・震撼彈：這件事真的做得到"
-style: |
-  section.appendix {
-    background-color: #f8fafc;
-    border-left: 8px solid #94a3b8;
-  }
-  .highlight {
-    color: #2563eb;
-    font-weight: bold;
-  }
 ---
 
 <!-- 第 3 頁 -->

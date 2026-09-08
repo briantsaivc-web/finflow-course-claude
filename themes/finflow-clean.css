@@ -1,0 +1,38 @@
+/* @theme finflow-clean */
+/* A．白板筆記：現在的樣子整理乾淨。白底、深灰字、藍色重點、紅色警示。投影機最保險。 */
+@import 'default';
+
+section {
+  background: #ffffff;
+  color: #111827;
+  font-family: "Segoe UI", "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", -apple-system, sans-serif;
+  padding: 50px 70px;
+  font-size: 26px;
+  line-height: 1.45;
+}
+section::after { color: #9ca3af; font-size: 18px; }
+header { color: #9ca3af; font-size: 18px; }
+h1 { font-size: 2rem; color: #111827; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px; margin-bottom: 16px; }
+h2 { font-size: 1.4rem; color: #1d4ed8; }
+.lead { font-size: 1.3rem; color: #1d4ed8; font-weight: 700; margin-bottom: 24px; }
+.highlight { color: #b91c1c; font-weight: bold; }
+.grid { display: flex; gap: 16px; margin: 24px 0; align-items: center; }
+.box { flex: 1; border: 2px solid #111827; padding: 16px; text-align: center; border-radius: 6px; background: #ffffff; }
+.box.blue { border-color: #1d4ed8; background: #eff6ff; }
+.box.red { border-color: #b91c1c; background: #fef2f2; }
+.arrow { font-size: 24px; font-weight: bold; color: #1d4ed8; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 22px; }
+th { border-bottom: 2px solid #111827; text-align: left; padding: 10px; background: transparent; }
+td { border-bottom: 1px solid #e5e7eb; padding: 10px; }
+tr:nth-child(even) td { background: #f9fafb; }
+code { background: #f3f4f6; color: #111827; padding: 2px 6px; border-radius: 4px; }
+pre { background: #f3f4f6; border-left: 4px solid #1d4ed8; }
+blockquote { border-left: 4px solid #1d4ed8; background: #eff6ff; color: #1e3a8a; padding: 10px 16px; font-style: normal; }
+img { border: 1px solid #e5e7eb; }
+section.title { display: flex; flex-direction: column; justify-content: center; }
+section.title h1 { font-size: 2.6rem; border: none; }
+section.title p { font-size: 1.3rem; color: #4b5563; }
+
+/* 附錄／補充頁：<!-- _class: appendix --> */
+section.appendix { background: #f8fafc; border-left: 8px solid #94a3b8; }
+/* 章名頁：<!-- _class: title --> 已定義於上方 */

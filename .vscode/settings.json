@@ -1,0 +1,9 @@
+{
+  "markdown.marp.themes": [
+    "./themes/finflow-clean.css",
+    "./themes/finflow-card.css",
+    "./themes/finflow-dark.css",
+    "./themes/finflow-bold.css"
+  ],
+  "markdown.marp.enableHtml": true
+}

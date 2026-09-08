@@ -1,0 +1,37 @@
+/* @theme finflow-bold */
+/* D．雜誌雙色：白底、粗黑大標、單一橘色強調，左側色帶。像年輕人看的雜誌或 YouTube 縮圖，遠看最清楚、最有記憶點。 */
+@import 'default';
+
+section {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Segoe UI", "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", -apple-system, sans-serif;
+  padding: 50px 70px 50px 90px;
+  font-size: 26px;
+  line-height: 1.45;
+  border-left: 22px solid #ea580c;
+}
+section::after { color: #ea580c; font-weight: 800; font-size: 20px; }
+header { color: #6b7280; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+h1 { font-size: 2.2rem; font-weight: 900; color: #111111; margin-bottom: 14px; letter-spacing: -0.5px; }
+h1 strong, .lead strong { color: #ea580c; }
+h2 { font-size: 1.4rem; color: #ea580c; font-weight: 800; }
+.lead { font-size: 1.3rem; color: #111111; font-weight: 700; margin-bottom: 22px; padding: 8px 14px; background: #fff7ed; border-left: 6px solid #ea580c; }
+.highlight { color: #ffffff; background: #ea580c; font-weight: bold; padding: 0 8px; border-radius: 3px; }
+.grid { display: flex; gap: 0; margin: 22px 0; align-items: stretch; }
+.box { flex: 1; border: 3px solid #111111; padding: 16px; text-align: center; background: #ffffff; margin-right: -3px; }
+.box.blue { background: #111111; color: #ffffff; }
+.box.blue strong { color: #fdba74; }
+.box.red { background: #ea580c; color: #ffffff; border-color: #ea580c; }
+.arrow { font-size: 26px; font-weight: 900; color: #ea580c; align-self: center; padding: 0 10px; }
+table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 22px; }
+th { background: #111111; color: #ffffff; text-align: left; padding: 10px 12px; }
+td { border-bottom: 2px solid #111111; padding: 10px 12px; }
+code { background: #111111; color: #fdba74; padding: 2px 6px; border-radius: 3px; }
+pre { background: #111111; color: #f9fafb; }
+blockquote { border: 3px solid #111111; background: #fff; padding: 12px 18px; font-style: normal; font-weight: 600; }
+img { border: 3px solid #111111; }
+section.title { display: flex; flex-direction: column; justify-content: center; background: #ea580c; color: #fff; border-left-color: #111111; }
+section.title h1 { color: #fff; font-size: 3rem; }
+section.title p { font-size: 1.4rem; color: #ffedd5; }
+section.title header, section.title::after { color: #ffedd5; }

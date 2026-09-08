@@ -78,3 +78,10 @@ Brian 看到 Claude 交付 zip 後問:用 VS Code 會不會比 cmd 的 add/commi
 - Brian 第一次用 VS Code 推 VS Code 補充章節，過程截圖五張（Changes 清單、沒 staged 的對話框、空訊息 COMMIT_EDITMSG、staged＋訊息、Sync 對話框），裁切後放進 images/VSC-02～06，新增 S2-2b、S2-2c、S2-7b 三頁，8 頁→11 頁；S2-7 踩坑表加兩列。
 - 查本機：main 與 origin/main 同步（29d4c5e），第六部 v1.0 與 VS Code 補充皆已上 GitHub。6 個檔顯示 M 但忽略空白後 diff 為 0——前 45～48 行被改成 CRLF。加 .gitattributes（* text=auto eol=lf）並 renormalize。
 - 第六部 v1.1 五個檔同批寫入。
+
+## 11. 投影片樣板系統化：四套主題，全課程採用 A（2026-09-08）
+- 原本 14 份 slides md 各自在 frontmatter 內嵌一段一模一樣的 CSS（1,139 字元，13 份雜湊完全相同；deck-test.md 另有 appendix／highlight 兩條）。改動樣式要改 14 個檔。
+- 改成 Marp 主題檔：`themes/finflow-clean.css`（A 白板筆記）、`finflow-card.css`（B 桌遊卡牌）、`finflow-dark.css`（C 夜間終端機）、`finflow-bold.css`（D 雜誌雙色）。`.vscode/settings.json` 登記四套，VS Code 預覽即時吃到。
+- 14 份 md 的 frontmatter 移除內嵌 style、改為 `theme: finflow-clean`；Brian 選定 A。deck-test.md 原本 `.highlight` 是藍色，統一為紅色（紅＝警示）；`section.appendix` 併入主題保留。
+- 換樣板＝改一行 `theme:`。`themes/README.md` 記錄四套差異、頁面寫法（`_class: title`／`appendix`、lead／grid／box／highlight）與匯出指令。
+- 驗證：part1-mindset、part3-five-days、deck-test 逐頁渲染確認；part2 與 part6 的 pptx 用 `--theme-set themes` 重渲（11／10 頁）。備份於 `_backup_theme_20260908/`。
