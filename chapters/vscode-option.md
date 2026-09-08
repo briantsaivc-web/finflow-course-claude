@@ -31,6 +31,20 @@ VS Code 是微軟出的免費編輯器。你不需要用它寫程式；對這個
 
 「改前先看差異」這件事，正是第六部講的「動手門檻」在日常裡的樣子：AI 改了什麼，你一行一行看過，不接受沒看過的改動。
 
+實際畫面長這樣（作者電腦，2026-09-08，第一次用 VS Code 推這一章時的截圖）：
+
+![](../images/VSC-02-changes-list.png)
+
+左側 Changes 底下列出改了 5 個檔，每個後面一個 U（未追蹤的新檔），藍色 Commit 按鈕就是 `git commit`。按檔案旁的「＋」之後，它們會搬到 Staged Changes（＝`git add`）：
+
+![](../images/VSC-05-staged-with-message.png)
+
+上方訊息框打一句話，這時才按 Commit。Commit 之後按鈕會變成「Sync Changes 1↑」，「1↑」就是有一個存檔點還沒上傳；按下去它會問一次「這會從 origin/main 拉下來再推上去」，按 OK 就是 `git push`（前面多做一次 pull）：
+
+![](../images/VSC-06-sync-dialog.png)
+
+推完按鈕消失、狀態列的 1↑ 歸零，GitHub 上就有了。
+
 ---
 
 ## 三種做法對照
@@ -85,6 +99,14 @@ github.dev 改完關掉分頁，東西不見了：未 commit 的修改只存在�
 按 Sync 跳出「合併」或衝突的訊息：Sync 是先 pull 再 push，代表 GitHub 上有你本機沒有的改動。一個人用的 repo 幾乎不會遇到；遇到了把訊息貼給 AI 問怎麼解。
 
 第一次 Push 跳出登入視窗：跟 GitHub 章第一次 push 時一樣，登入 GitHub 帳號即可，之後不會再問。
+
+沒按「＋」就按 Commit：VS Code 會問「沒有 staged 的變更，要全部收進來直接 commit 嗎」，按 Yes 等於 `git add .`。訊息框空著就按 Commit：會跳出一個叫 COMMIT_EDITMSG 的檔案，在第 1 行打一句話再按右下角 Commit，或直接關掉它回面板重打。這兩個都不是錯誤，是 VS Code 在替你補沒做的那一步。作者第一次用就兩個都遇到了：
+
+![](../images/VSC-03-stage-all-dialog.png)
+
+![](../images/VSC-04-empty-message-editor.png)
+
+檔案顯示 M（有改），點開卻看不到差異：Windows 的換行符號（CRLF）跟 GitHub 上的（LF）不同，git 認為整行都變了，內容其實一模一樣。解法是在 repo 根目錄放一個 `.gitattributes` 檔，內容一行 `* text=auto eol=lf`，git 之後會統一用 LF，這種假差異就不會再出現。本課程 repo 已經加了。
 
 ---
 

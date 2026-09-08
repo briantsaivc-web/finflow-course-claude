@@ -91,6 +91,30 @@ style: |
 
 ---
 
+<!-- S2-2b -->
+# 實際長這樣（一）：打勾、寫訊息
+
+![w:400](../images/VSC-02-changes-list.png) ![w:400](../images/VSC-05-staged-with-message.png)
+
+- 左：改了 5 個檔（U＝新檔），藍色 **Commit** 就是 `git commit`
+- 右：按 ＋ 之後變 **Staged Changes**（＝`git add`）；上方打一句話，這時才按 Commit
+
+---
+
+<!-- S2-2c -->
+# 實際長這樣（二）：Sync ＝ 上傳
+
+<div class="grid">
+  <div style="flex:1;text-align:center"><img src="../images/VSC-06-sync-dialog.png" style="width:600px;border:1px solid #e5e7eb"></div>
+  <div style="flex:1">
+    Commit 之後按鈕會變成 <b>Sync Changes 1↑</b>——「1↑」就是有 1 個存檔點還沒上傳。<br><br>
+    按下去會問一次：「這會從 origin/main 拉下來再推上去」——按 OK。這就是 <code>git push</code>（前面多做一次 pull）。<br><br>
+    <span class="highlight">推完按鈕消失、狀態列的 1↑ 歸零</span>，就代表 GitHub 已經有了。
+  </div>
+</div>
+
+---
+
 <!-- S2-3 -->
 # 三種做法對照
 
@@ -182,7 +206,7 @@ style: |
 <!-- S2-7 -->
 # 踩坑提醒
 
-<div class="lead">四個新手一定會遇到的狀況，先講。</div>
+<div class="lead">六個新手一定會遇到的狀況，先講。後兩個是作者自己第一次用時踩到的。</div>
 
 | 狀況 | 為什麼 | 怎麼辦 |
 | :--- | :--- | :--- |
@@ -190,6 +214,20 @@ style: |
 | github.dev 改完關分頁，東西不見 | 未 commit 的修改只存在瀏覽器 | 改完立刻 Commit ＋ Push |
 | 按 Sync 跳出「合併」或衝突 | Sync ＝ 先 pull 再 push，遠端有人改過 | 一個人用的 repo 不會遇到；遇到就問 AI 怎麼解 |
 | 第一次 Push 跳出登入視窗 | 跟 GitHub 章第一次 push 一樣 | 登入 GitHub 帳號即可，之後不會再問 |
+| 訊息框空著就按 Commit | git 不接受沒有訊息的存檔點 | 見下一頁：關掉跳出來的檔案，回去打一句話再按 |
+| 檔案顯示 M，點開卻看不到差異 | Windows 換行符號（CRLF）跟 GitHub（LF）不同，內容其實一樣 | repo 裡放一個 `.gitattributes` 統一用 LF（本課程 repo 已加） |
+
+---
+
+<!-- S2-7b -->
+# 踩坑實況：訊息空著就按 Commit
+
+<div class="grid" style="align-items:flex-start">
+  <div style="flex:1;text-align:center"><img src="../images/VSC-03-stage-all-dialog.png" style="width:440px;border:1px solid #e5e7eb"><br>沒按 ＋ 就按 Commit：它問「要不要全部收進來」<br>按 <b>Yes</b> 等於 <code>git add .</code></div>
+  <div style="flex:1;text-align:center"><img src="../images/VSC-04-empty-message-editor.png" style="width:640px;border:1px solid #e5e7eb"><br>訊息空著：跳出一個 COMMIT_EDITMSG 檔<br>在第 1 行打一句話再按右下 Commit；或關掉它，回面板重打</div>
+</div>
+
+- 兩個都不是錯誤，是 VS Code 在替你補沒做的那一步
 
 ---
 

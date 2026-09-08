@@ -3,3 +3,6 @@ _site/
 *.pdf
 Thumbs.db
 .DS_Store
+
+# 本機備份，不進 repo
+_backup_*/

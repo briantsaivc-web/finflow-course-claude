@@ -59,3 +59,22 @@ Claude 回答並經 Brian 定案:有名字(IV&V、四眼原則、Fagan 審查、
 決策:先做獨立最後章節,不併入 134 頁主骨架,Brian 整理時再 merge;TA 程式小白、全章無程式碼;AI 用真名;文獻僅查出處確認,不做文獻探討。
 
 產出:`outline/part6-ai-cross-review_outline_v1.0.md`(12 頁骨架,暫編 135-146)、`notes/part6-ai-cross-review-slides.md`(Marp 12 頁)、`chapters/ai-cross-review.md`(書籍版全文)、`samples/part6-ai-cross-review_slides_sample.pptx`(Marp CLI 渲染)。
+
+## 8. 第二部補充「同一件事的三種做法」(2026-09-08)
+
+Brian 看到 Claude 交付 zip 後問:用 VS Code 會不會比 cmd 的 add/commit/push 更有效率?Claude 答會(看得到差異、Marp 預覽、AI 直接寫進資料夾),Brian 決定把「原始作法 vs 協作作法」加進課程,讓有興趣的學員知道有這個選項,並加上雲端(github.com 改 github.dev)與本機兩種開法的差異。
+
+事實查證(2026-09-08):GitHub Docs「The github.dev web-based editor」(改網址或按 `.`、可 commit/push、無終端機、僅 web extensions、未 commit 修改存於瀏覽器);marp-team Discussion #169(網頁版可預覽、不可匯出 pptx)。
+
+產出:`outline/part2-supplement-vscode_outline_v1.0.md`(8 頁,S2-1~S2-8)、`notes/part2-vscode-option-slides.md`、`chapters/vscode-option.md`、`samples/part2-vscode-option_slides_sample.pptx`、`images/VSC-01-restricted-mode.png`(Brian 電腦截圖,未加框,【待補】加框版與 Source Control 面板截圖)。
+
+## 9. 第六部外部審閱與精簡（2026-09-08）
+- 另兩個 AI 對第六部投影片提出四項勘誤：孔多塞數字精度／IV&V 誤寫成盲審／sycophancy 過度延伸與「找錯」提示詞／136 表頭 2 欄。
+- 查證結果：二、三成立（IV&V 的獨立是組織／管理／預算獨立；Sharma 2023 研究的是迎合人類使用者，未測模型對模型）；一為捨入問題；四不成立（repo 原始檔本就 4 欄）。對方引 Zhou 2022 支持「找錯 prompt 誘發假警報」不成立，該文未談此事。
+- Brian 重申課程三原則（不是學術研討；小白看得懂做得到；性價比高才放），據此重盤：12 頁→10 頁。砍「這件事有名字」整頁；孔多塞＋Knight & Leveson 合為一頁並改用 Kim et al. 2025（ICML，350+ 模型、兩者都錯時約 60% 相同）當例子；去掉 sycophancy 一詞；反向質詢提示詞改中立核對版；「標 UNKNOWN」改「寫進待辦」。文獻只留章節 md 附錄。
+- 檔案：notes/part6-ai-cross-review-slides.md、chapters/ai-cross-review.md、outline/part6-ai-cross-review_outline_v1.0.md（各留 .backup.20260908）、samples pptx 重渲 10 頁。
+
+## 10. 第二部補充 v1.1：五張實機截圖與換行符號假差異（2026-09-08）
+- Brian 第一次用 VS Code 推 VS Code 補充章節，過程截圖五張（Changes 清單、沒 staged 的對話框、空訊息 COMMIT_EDITMSG、staged＋訊息、Sync 對話框），裁切後放進 images/VSC-02～06，新增 S2-2b、S2-2c、S2-7b 三頁，8 頁→11 頁；S2-7 踩坑表加兩列。
+- 查本機：main 與 origin/main 同步（29d4c5e），第六部 v1.0 與 VS Code 補充皆已上 GitHub。6 個檔顯示 M 但忽略空白後 diff 為 0——前 45～48 行被改成 CRLF。加 .gitattributes（* text=auto eol=lf）並 renormalize。
+- 第六部 v1.1 五個檔同批寫入。
