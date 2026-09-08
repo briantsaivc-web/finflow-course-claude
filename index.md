@@ -39,6 +39,7 @@ layout: default
 - [真實踩坑排查與千局平衡實測](slides/part3-debugging-and-balance-slides.html)（頁 67-72）
 - [疊代節奏與 UI 演進：冰山水面下的那 90%](slides/part3-iteration-and-ui-slides.html)（頁 73-85）
 - [找人測試與多人連線的決策](slides/part3-testing-and-multiplayer-slides.html)（頁 86-92）
+- [四個常見坑與你的品管習慣清單](slides/part3-pitfalls-and-qa-slides.html)（頁 93-101）
 - [實戰專題：DARA 數據治理實例](slides/part3-dara-case-study.html)
 
 ### 第六部・讓 AI 互相抓錯
