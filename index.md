@@ -8,8 +8,8 @@ layout: default
 
 ## 開場
 
-- [序：起心動念](chapters/preface.html) —— 為什麼要做這件事
-- [見證：玩家怎麼說](chapters/testimonials.html) —— 玩過的人的一句話
+- [序：起心動念](slides/preface-slides.html)（投影片，5 頁）—— 為什麼要做這件事｜[圖文版](chapters/preface.html)
+- [見證：玩過的人怎麼說](slides/testimonials-slides.html)（投影片，4 頁）—— 真實回饋與示範情境，標示清楚｜[圖文版](chapters/testimonials.html)
 
 ## 課程簡報
 
@@ -56,7 +56,7 @@ layout: default
 
 - [交叉審查與實證裁決](slides/part6-ai-cross-review-slides.html)
 
-主體 134 頁到齊。序與見證的投影片版另行補上。
+主體 134 頁到齊，序與見證的投影片版也已補上（見最上方「開場」）。
 
 ## 實作章節（圖文版）
 

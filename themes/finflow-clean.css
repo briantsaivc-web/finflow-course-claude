@@ -43,3 +43,29 @@ section.dense h1 { font-size: 1.65rem; margin-bottom: 10px; padding-bottom: 6px;
 section.dense .lead { font-size: 1.05rem; margin-bottom: 12px; }
 section.dense pre { font-size: 14.5px; line-height: 1.38; padding: 12px 14px; margin: 6px 0; }
 section.dense ul, section.dense ol { font-size: 20px; margin-top: 6px; }
+
+/* 滿版情緒開場：<!-- _class: hero --> */
+section.hero { background:#0f172a; color:#f8fafc; display:flex; flex-direction:column;
+  justify-content:center; align-items:center; text-align:center; border-left:none; padding:60px 90px; }
+section.hero h1 { color:#f8fafc; border:none; font-size:2.3rem; line-height:1.55; margin:0 0 18px; padding:0; letter-spacing:0; }
+section.hero h1::before { content:none; }
+section.hero .lead { color:#94a3b8; font-size:1.15rem; font-weight:400; background:none; border:none; padding:0; }
+section.hero ul, section.hero li { color:#cbd5e1; }
+section.hero .highlight { color:#fbbf24; background:none; padding:0; }
+section.hero header, section.hero::after { color:#475569; }
+
+/* 見證氣泡：<div class="bubbles"><div class="bub">… */
+.bubbles { display:flex; flex-direction:column; gap:13px; margin:16px 0 8px; }
+.bub { display:flex; gap:12px; align-items:flex-start; }
+.bub .ava { flex:none; width:44px; height:44px; border-radius:50%; background:#e5e7eb;
+  display:flex; align-items:center; justify-content:center; font-size:26px; }
+.bub .msg { background:#eff6ff; border:1px solid #bfdbfe; border-radius:14px;
+  padding:9px 16px; font-size:22px; line-height:1.5; }
+.bub.demo .ava { background:#f3f4f6; }
+.bub.demo .msg { background:#fafafa; border:1px dashed #d1d5db; color:#4b5563; }
+.bub.parent .ava { background:#ffedd5; }
+.bub.parent .msg { background:#fff7ed; border:1px solid #fed7aa; }
+.bub .who { display:block; font-size:15px; color:#6b7280; margin-top:3px; }
+.tag { display:inline-block; font-size:16px; padding:2px 10px; border-radius:999px;
+  background:#dcfce7; color:#166534; margin-left:8px; vertical-align:middle; }
+.tag.demo { background:#f3f4f6; color:#6b7280; }
