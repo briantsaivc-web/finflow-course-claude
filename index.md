@@ -40,13 +40,14 @@ layout: default
 - [疊代節奏與 UI 演進：冰山水面下的那 90%](slides/part3-iteration-and-ui-slides.html)（頁 73-85）
 - [找人測試與多人連線的決策](slides/part3-testing-and-multiplayer-slides.html)（頁 86-92）
 - [四個常見坑與你的品管習慣清單](slides/part3-pitfalls-and-qa-slides.html)（頁 93-101）
+- [收尾與本部小結：什麼時候能說「能分享了」](slides/part3-shipping-and-wrap-slides.html)（頁 102-108）
 - [實戰專題：DARA 數據治理實例](slides/part3-dara-case-study.html)
 
 ### 第六部・讓 AI 互相抓錯
 
 - [交叉審查與實證裁決](slides/part6-ai-cross-review-slides.html)
 
-（第三部剩餘章節、第四部讀者實作題、第五部結語陸續加入）
+（第四部讀者實作題、第五部結語陸續加入）
 
 ## 實作章節（圖文版）
 
