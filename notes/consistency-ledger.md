@@ -9,7 +9,7 @@
 - 有編號頁面：**144**，範圍 **3–144**
 - 缺號：**無**
 - 不編號插頁：125b, 85b
-- 序（preface）與見證（testimonials）不進主頁序，第七部與各專題頁亦不編號
+- 序（preface）與見證（testimonials）不進主頁序，第七部、第八部與各專題頁亦不編號
 - 主頁序自 **3** 起算；頁 1–2 在全書從未出現（封面與目次留白）
 - 重複頁碼：**無**
 
@@ -162,7 +162,7 @@
 
 ## 2. 跨頁引用
 
-- 引用總次數：**60**，指向 **48** 個不同頁面
+- 引用總次數：**61**，指向 **48** 個不同頁面
 - 指向不存在的頁碼：**無**
 
 | 被引用的頁 | 次數 | 該頁標題 |
@@ -213,7 +213,7 @@
 | 125 | 1 | 五個心法，一張圖記完 |
 | 128 | 1 | 方向一：為什麼「一個大檔案」後來會拖住你 |
 | 135 | 2 | 一個真實的下午：兩個 AI 交手、五個 bug |
-| 139 | 1 | 真正有效的那一步：實跑 |
+| 139 | 2 | 真正有效的那一步：實跑 |
 | 142 | 1 | 三種提示詞（複製就能用） |
 
 ## 3. 術語口徑
@@ -221,20 +221,20 @@
 | 用語 | 總次數 | 出現檔數 | 對照（不該出現的變體） |
 | :--- | ---: | ---: | :--- |
 | 疊代 | 16 | 11 | `迭代` × 0 ✓ |
-| 規格書 | 49 | 12 | — |
+| 規格書 | 50 | 13 | — |
 | 工程書 | 3 | 3 | — |
-| 全景圖 | 10 | 3 | `全景流程圖` × 0 ✓ |
-| 提示詞 | 17 | 6 | — |
+| 全景圖 | 11 | 3 | `全景流程圖` × 0 ✓ |
+| 提示詞 | 29 | 7 | — |
 | 造物者 | 13 | 10 | — |
 | 鐵律 | 46 | 12 | — |
-| 引擎 | 12 | 5 | — |
+| 引擎 | 13 | 6 | — |
 
 **並存用語**（兩種說法都對，只記數量，不是錯誤）：
 
 | 用語 | 次數 | 這個詞指的是 |
 | :--- | ---: | :--- |
-| 交叉抓錯 | 5 | 全景圖裡那一格的名字 |
-| 交叉審查 | 7 | 這件事的一般說法（第六部標題用語） |
+| 交叉抓錯 | 6 | 全景圖裡那一格的名字 |
+| 交叉審查 | 8 | 這件事的一般說法（第六部標題用語） |
 | 工程書 | 3 | 大專案才拆出來的第二份文件 |
 
 ## 4. 數字口徑
@@ -242,17 +242,18 @@
 | 數字說法 | 總次數 | 出現在 |
 | :--- | ---: | :--- |
 | 74 次 | 2 | part4-build-and-ship-slides.md×1, part5-closing-slides.md×1 |
-| 58 張 | 1 | part1-mindset-slides.md×1 |
-| 15 輪 | 19 | part0-shock-slides.md×3, part1-mindset-slides.md×1, part3-five-days-sprint-slides.md×1, part4-build-and-ship-slides.md×3, part4-spec-and-prompts-slides.md×10, part7-methodology-slides.md×1 |
-| 6 張 | 11 | part1-card-growth-slides.md×2, part1-mindset-slides.md×3, part2-habits-and-prompts-slides.md×1, part3-pitfalls-and-qa-slides.md×1, part4-spec-and-prompts-slides.md×4 |
+| 58 張 | 2 | part1-mindset-slides.md×1, part8-self-review-slides.md×1 |
+| 15 輪 | 20 | part0-shock-slides.md×3, part1-mindset-slides.md×1, part3-five-days-sprint-slides.md×1, part4-build-and-ship-slides.md×3, part4-spec-and-prompts-slides.md×10, part7-methodology-slides.md×1, part8-self-review-slides.md×1 |
+| 6 張 | 12 | part1-card-growth-slides.md×2, part1-mindset-slides.md×3, part2-habits-and-prompts-slides.md×1, part3-pitfalls-and-qa-slides.md×1, part4-spec-and-prompts-slides.md×4, part8-self-review-slides.md×1 |
 | 10 張 | 4 | part1-mindset-slides.md×1, part4-spec-and-prompts-slides.md×3 |
 | 五個心法 | 4 | index.md×1, part5-closing-slides.md×3 |
 | 第六條 | 6 | index.md×1, part5-closing-slides.md×4, part7-methodology-slides.md×1 |
 | 六個步驟 | 4 | part3-shipping-and-wrap-slides.md×2, part3-testing-and-multiplayer-slides.md×2 |
-| 四道閘門 | 2 | part5-closing-slides.md×1, part7-methodology-slides.md×1 |
+| 四道閘門 | 3 | part5-closing-slides.md×1, part7-methodology-slides.md×1, part8-self-review-slides.md×1 |
 | 三條鐵律 | 9 | part1-card-growth-slides.md×1, part1-mindset-slides.md×2, part3-five-days-sprint-slides.md×1, part4-build-and-ship-slides.md×1, part4-spec-and-prompts-slides.md×2, part5-closing-slides.md×2 |
+| 26 版 | 1 | part8-self-review-slides.md×1 |
 | 七條 | 3 | part3-pitfalls-and-qa-slides.md×1, part3-shipping-and-wrap-slides.md×1, part5-closing-slides.md×1 |
-| 五項 | 10 | ai-cross-review.md×2, part3-pitfalls-and-qa-slides.md×3, part4-build-and-ship-slides.md×4, part5-closing-slides.md×1 |
+| 五項 | 11 | ai-cross-review.md×2, part3-pitfalls-and-qa-slides.md×3, part4-build-and-ship-slides.md×4, part5-closing-slides.md×1, part8-self-review-slides.md×1 |
 
 ## 5. Step 編號系統
 
@@ -270,6 +271,8 @@
 
 ## 6. 渲染產物同步
 
-- md 比 HTML 新或 HTML 缺漏：**無**
+- HTML 缺漏（硬錯誤）：**無**
+- mtime 提示（**僅供參考，非錯誤**）：檔案批次複製或 git checkout 後 mtime 會全部翻新，這一列不能當成「忘了重新產出」的證據；判斷是否重render 請以你這一批改過哪些 md 為準。
+  　mtime 上 HTML 早於 md 的：無
 - HTML 外部圖片相依：**0**
 - 原始檔殘留 emoji（純文字符號 ☐⚠✓✕➔➜・ 白名單放行）：**無**

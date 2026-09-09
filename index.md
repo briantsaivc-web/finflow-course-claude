@@ -41,7 +41,7 @@ layout: default
   <a class="start-card" href="slides/testimonials-slides.html"><b>見證：玩過的人怎麼說</b><span>4 頁　真實回饋與示範情境，標示清楚</span></a>
 </div>
 
-## 課程七部
+## 課程八部
 
 <div class="deck-grid">
 
@@ -114,6 +114,14 @@ layout: default
   </ul>
 </div>
 
+<div class="deck-card">
+  <h3>第八部・實證</h3>
+  <p class="sub">同一套流程，拿來審這本書自己</p>
+  <ul>
+    <li><a href="slides/part8-self-review-slides.html">沒有實跑可以當裁判時，怎麼審一份文件</a> <span class="pg">10 頁</span></li>
+  </ul>
+</div>
+
 </div>
 
 ## 實作章節（圖文版，適合照著操作）
@@ -123,6 +131,7 @@ layout: default
 - [把你的作品放上網：GitHub 三步驟實戰](chapters/github-tutorial.html) —— 建立 Repository → 用指令推上去 → 開 GitHub Pages（全程實機截圖）
 - [同一件事的三種做法：命令提示字元、VS Code、瀏覽器裡的 VS Code](chapters/vscode-option.html) —— add／commit／push 三步換成三個按鈕
 - [讓 AI 互相抓錯：交叉審查與實證裁決](chapters/ai-cross-review.html) —— 你不用看得懂程式，也能讓三個 AI 互相抓錯
+- [用這套方法審它自己：四份可以直接複製的審查提示詞](chapters/self-review.html) —— 讀者／編輯／懷疑論者／通讀，四份提示詞與三條紀律
 - [序](chapters/preface.html)　·　[見證](chapters/testimonials.html)
 
 ## 幾個閱讀慣例
@@ -134,4 +143,4 @@ layout: default
 
 ---
 
-主體頁 3–134 到齊（前兩頁是封面與目次，線上版不另出頁），第六部頁 135–144；序（5 頁）、見證（4 頁）、全景圖（1 頁）與第七部方法論（8 頁）不進主頁序。線上版最後更新：2026-09-09
+主體頁 3–134 到齊（前兩頁是封面與目次，線上版不另出頁），第六部頁 135–144；序（5 頁）、見證（4 頁）、全景圖（1 頁）、第七部方法論（8 頁）與第八部實證（10 頁）不進主頁序。線上版最後更新：2026-09-09

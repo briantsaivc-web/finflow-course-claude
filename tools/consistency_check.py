@@ -16,7 +16,7 @@ EXCLUDE   = ('project-history', 'soda-ai-interaction', 'github-tutorial-recordin
 DECKS     = [f for f in ALL_NOTES if not any(e in f for e in EXCLUDE)]
 # 專題／補充頁自成一套內部編號，不進主頁序
 STANDALONE = ('part3-dara-case-study', 'part2-vscode-option', 'part2-ai-scope-control',
-              'part7-methodology', 'panorama-slides')
+              'part7-methodology', 'part8-self-review', 'panorama-slides')
 MAIN = [f for f in DECKS if not any(s in f for s in STANDALONE)]
 
 def read(p):
@@ -81,13 +81,13 @@ for f in SCAN:
         step_hits[m.group(1)].append(os.path.basename(f))
 
 # ---- 5. 渲染產物同步 --------------------------------------------------------
-stale = []
+missing, older = [], []
 for f in DECKS:
     h = 'slides/' + os.path.basename(f).replace('.md', '.html')
     if not os.path.exists(h):
-        stale.append((os.path.basename(f), 'HTML 不存在'))
+        missing.append(os.path.basename(f))
     elif os.path.getmtime(h) < os.path.getmtime(f):
-        stale.append((os.path.basename(f), 'HTML 比 md 舊'))
+        older.append(os.path.basename(f))
 
 # ---- 6. 外部相依／emoji -----------------------------------------------------
 ext, emo = [], []
@@ -119,7 +119,7 @@ o('')
 o(f'- 有編號頁面：**{len(pages)}**，範圍 **{min(nums)}–{max(nums)}**')
 o(f'- 缺號：{"**無**" if not gaps else gaps}')
 o(f'- 不編號插頁：{", ".join(str(u) for u in unnum) if unnum else "無"}')
-o(f'- 序（preface）與見證（testimonials）不進主頁序，第七部與各專題頁亦不編號')
+o(f'- 序（preface）與見證（testimonials）不進主頁序，第七部、第八部與各專題頁亦不編號')
 o(f'- 主頁序自 **{min(nums)}** 起算；頁 1–2 在全書從未出現（封面與目次留白）')
 o(f'- 重複頁碼：{"**無**" if not dups else dups}')
 o('')
@@ -177,6 +177,9 @@ for k in sorted(step_hits):
 o('')
 o('## 6. 渲染產物同步')
 o('')
-o(f'- md 比 HTML 新或 HTML 缺漏：{"**無**" if not stale else stale}')
+o(f'- HTML 缺漏（硬錯誤）：{"**無**" if not missing else missing}')
+o('- mtime 提示（**僅供參考，非錯誤**）：檔案批次複製或 git checkout 後 mtime 會全部翻新，'
+  '這一列不能當成「忘了重新產出」的證據；判斷是否重render 請以你這一批改過哪些 md 為準。')
+o(f'  　mtime 上 HTML 早於 md 的：{"無" if not older else str(len(older)) + " 份"}')
 o(f'- HTML 外部圖片相依：{"**0**" if not ext else ext}')
 o(f'- 原始檔殘留 emoji（純文字符號 {"".join(sorted(SAFE))} 白名單放行）：{"**無**" if not emo else emo}')
