@@ -35,7 +35,7 @@ layout: default
 ## 從這裡開始
 
 <div class="start-row">
-  <a class="start-card" href="slides/panorama-slides.html"><b>先看地圖：全景流程圖</b><span>1 頁　一張圖看完這門課教的整套方法</span></a>
+  <a class="start-card" href="slides/panorama-slides.html"><b>先看地圖：全景圖</b><span>1 頁　一張圖看完這門課教的整套方法</span></a>
   <a class="start-card" href="slides/preface-slides.html"><b>序：起心動念</b><span>5 頁　為什麼一個不會寫程式的人要做這件事</span></a>
   <a class="start-card" href="slides/part0-shock-slides.html"><b>第零部：震撼彈</b><span>8 頁　這不是玩具，是真正能跑的軟體</span></a>
   <a class="start-card" href="slides/testimonials-slides.html"><b>見證：玩過的人怎麼說</b><span>4 頁　真實回饋與示範情境，標示清楚</span></a>
@@ -134,4 +134,4 @@ layout: default
 
 ---
 
-主體 134 頁到齊，序（5 頁）、見證（4 頁）、全景圖與第七部方法論（8 頁）已補上。線上版最後更新：2026-09-08
+主體頁 3–134 到齊（頁 1–2 是封面與目次，線上版不另出頁），第六部頁 135–144；序（5 頁）、見證（4 頁）、全景圖（1 頁）與第七部方法論（8 頁）不進主頁序。線上版最後更新：2026-09-09
