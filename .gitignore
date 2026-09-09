@@ -6,3 +6,8 @@ Thumbs.db
 
 # 本機備份，不進 repo
 _backup_*/
+
+# 合訂本產生物（tools/build_full_deck.py 產出）
+notes/_full.md
+notes/_vol_*.md
+dist/
