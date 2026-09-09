@@ -15,8 +15,8 @@
 <div class="lead">規格書你已經看過、改過。這一步只是請它開工。</div>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>規格書我看過了，可以照這份寫。
 
-請幫我寫成【一個單一 HTML 檔案】，我用瀏覽器打開就能玩，
-不需要安裝任何東西、不需要開伺服器。
+請幫我寫成【一個單一 HTML 檔案，檔名固定叫 index.html】，
+我用瀏覽器打開就能玩，不需要安裝任何東西、不需要開伺服器。
 
 請遵守我的三條鐵律：
 1. 只做一個 HTML 檔
@@ -36,6 +36,7 @@
 </code></pre>
 <ul>
 <li>最後那三個問題是關鍵：<span class="highlight">它會告訴你「以後要改哪裡」和「它自己不確定的地方」</span></li>
+<li><strong>檔名一定要指定 <code>index.html</code></strong>：等一下上架時，網址只認這個名字；存成別的名字，網頁會開出一片「404」</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="FinFlow 實戰心法 | 第四部・做出來，然後送出去" data-class="dense" data-theme="finflow-clean" lang="POSIX" class="dense" data-marpit-pagination="2" style="--paginate:true;--header:FinFlow 實戰心法 | 第四部・做出來，然後送出去;--class:dense;--theme:finflow-clean;" data-marpit-pagination-total="8">
@@ -126,7 +127,7 @@
 <p><strong>第五項只能找人</strong>，而且要等下一頁上架拿到網址，才好把東西交到他手上——這就是第三部 Step4 的實戰</p>
 </li>
 <li>
-<p>五項全過之前，先不要急著加新功能</p>
+<p>五項全過之前，先不要急著加<strong>更多</strong>功能（上一頁那個「小步」練習不算，它就是要你在驗收前先體會一次小改動）</p>
 </li>
 </ul>
 </section>
@@ -143,9 +144,9 @@
   </div>
   <div class="arrow">➔</div>
   <div class="box blue">
-    <strong>② 三步驟推上去</strong><br />
-    add → commit → push<br />
-    <i>第二部教過的那三行</i>
+    <strong>② 把檔案放上去</strong><br />
+    Add file → Upload files<br />
+    <i>第二部頁 48–49 的網頁路線</i>
   </div>
   <div class="arrow">➔</div>
   <div class="box red">
@@ -157,7 +158,8 @@
 </div>
 <ul>
 <li>傳檔案的缺點是<strong>版本會散掉</strong>：你改了第五版，朋友手上還是第二版。網址沒有這個問題</li>
-<li>逐步截圖在〈把你的作品放上網：GitHub 三步驟實戰〉那一章，這裡不重複</li>
+<li>全程在網頁上做，<strong>不用裝 Git、不用開終端機</strong>——第二部頁 49 說過，那三行指令是裝了 Git 之後才用得到的，這裡用不到</li>
+<li>上傳前確認檔名是 <b>index.html</b>；逐步截圖在〈把你的作品放上網：GitHub 三步驟實戰〉那一章，這裡不重複</li>
 <li><span class="highlight">Branch 要選 <code>main</code></span>：很多舊教學叫你選 <code>gh-pages</code>，那是專案有自動建置時才會有的分支，你這種直接放 HTML 的專案，選單裡沒有它是正常的</li>
 </ul>
 </section>
@@ -210,8 +212,9 @@
   </div>
 </div>
 <ul>
-<li>對照第三部頁 107 的七項：<strong>鐵律與不做清單、規格書、自己玩過、找人測試、上線</strong>，這五項你走過了</li>
-<li><strong>還沒做的三項</strong>：變更說明留檔、四欄測試紀錄、專案現況盤點（Step5）。它們在只有一個檔案時感覺多餘，等你有第二個作品、或隔三個月回來改，就會知道為什麼要留</li>
+<li>對照第三部頁 107 的<strong>七項</strong>：<strong>① 鐵律＋不做清單、② 規格書、③ 變更說明（頁 119 那份）、⑦ 一個真的能跑的東西</strong>——這四項你已經有了</li>
+<li><strong>⑥ Step6 三條驗收</strong>算半項：頁 120 驗了流程跑得通、陌生人玩得動，但<strong>鐵律有沒有被破，還沒回頭對過</strong></li>
+<li><strong>缺兩項</strong>：④ 四欄測試紀錄、⑤ 專案現況盤點。它們在只有一個檔案時感覺多餘，等你有第二個作品、或隔三個月回來改，就會知道為什麼要留</li>
 <li>這一圈跟 FinFlow 走的是<strong>同一圈</strong>，只是規模不同——它到現在跑了 74 次，你跑了 1 次</li>
 <li><span class="highlight">你現在缺的不是能力，是次數。</span>而次數是可以累積的</li>
 </ul>

@@ -86,7 +86,7 @@
 | 71 | 面對改壞程式的終極武器：Git 降落傘 | `part3-debugging-and-balance-slides.md` |
 | 72 | 5 天衝刺行動清單 | `part3-debugging-and-balance-slides.md` |
 | 73 | 小步快跑：一次只做一個小主題 | `part3-iteration-and-ui-slides.md` |
-| 74 | 案例：五天，49 份變更說明 | `part3-iteration-and-ui-slides.md` |
+| 74 | 案例：六個日曆日，49 份變更說明 | `part3-iteration-and-ui-slides.md` |
 | 75 | 「變更說明」怎麼寫：三段就夠 | `part3-iteration-and-ui-slides.md` |
 | 76 | 冰山一角：玩家看到的，只是水面上那一塊 | `part3-iteration-and-ui-slides.md` |
 | 77 | 案例：同一個盤面，改了四次版 | `part3-iteration-and-ui-slides.md` |
@@ -149,7 +149,7 @@
 | 132 | 但是：做了，不等於做完了 | `part5-closing-slides.md` |
 | 133 | 最後補三個新手常見疑問 | `part5-closing-slides.md` |
 | 134 | 你已經是個造物者了 | `part5-closing-slides.md` |
-| 135 | 一個真實的下午：三個 AI、五個 bug | `part6-ai-cross-review-slides.md` |
+| 135 | 一個真實的下午：兩個 AI 交手、五個 bug | `part6-ai-cross-review-slides.md` |
 | 136 | AI 會錯在哪：不是不會寫，是「看起來對」 | `part6-ai-cross-review-slides.md` |
 | 137 | 多一雙眼睛有用——但 AI 常常一起錯 | `part6-ai-cross-review-slides.md` |
 | 138 | 第二個坑：AI 會順著你 | `part6-ai-cross-review-slides.md` |
@@ -162,31 +162,37 @@
 
 ## 2. 跨頁引用
 
-- 引用總次數：**46**，指向 **40** 個不同頁面
-- 指向不存在的頁碼：[('index.md', '1')]
+- 引用總次數：**60**，指向 **48** 個不同頁面
+- 指向不存在的頁碼：**無**
 
 | 被引用的頁 | 次數 | 該頁標題 |
 | ---: | ---: | :--- |
-| 1 | 1 | **查無此頁** |
 | 3 | 1 | 重新定義造物者 |
+| 6 | 2 | 疊代的節奏感 |
+| 9 | 1 | 讀者的落地產出 |
+| 10 | 1 | 出發前的認知 |
 | 11 | 1 | 開發模式的典範轉移 |
 | 14 | 1 | 守住邊界：先砍成 MVP |
-| 17 | 1 | FinFlow 的三條鐵律 |
+| 17 | 2 | FinFlow 的三條鐵律 |
+| 19 | 1 | 難度分期的智慧 |
 | 21 | 2 | 點子難度分級工作表 |
 | 23 | 1 | 深度案例：卡片的演進 |
 | 32 | 1 | 三選一就好，不用糾結 |
 | 40 | 1 | 習慣一：需求寫清楚 |
-| 41 | 1 | 習慣二：先要規格，再要程式 |
+| 41 | 2 | 習慣二：先要規格，再要程式 |
 | 44 | 1 | 批量內容發想指令設計 |
 | 47 | 1 | 白話認識 GitHub：專案的時光機 |
+| 48 | 1 | GitHub 極速上手：建立儲存庫 |
+| 49 | 1 | 核心一招：Commit（蓋一個存檔點） |
 | 53 | 1 | 極簡工具箱：你真正需要的只有三樣 |
 | 54 | 1 | 高低階模型分工的智慧 |
 | 55 | 1 | 實戰：模型分工操作範例 |
 | 59 | 1 | 五天衝刺：從零到可玩原型 |
 | 60 | 1 | 階段一：跑通單機最小閉環 |
 | 67 | 1 | 實戰踩坑：畫面冒出怪符號，怎麼根治 |
+| 68 | 1 | 階段五：數值平衡不是靠猜的 |
 | 73 | 2 | 小步快跑：一次只做一個小主題 |
-| 74 | 1 | 案例：五天，49 份變更說明 |
+| 74 | 1 | 案例：六個日曆日，49 份變更說明 |
 | 82 | 1 | 案例：畫面跟著玩家的熟練度長大 |
 | 85 | 1 | 你的 UI 調整工具箱 |
 | 86 | 1 | Step4：你測不出自己的 bug |
@@ -201,11 +207,13 @@
 | 116 | 1 | 提示詞 1：請 AI 生規格書 |
 | 117 | 2 | 提示詞 2：請 AI 寫程式 |
 | 118 | 2 | 提示詞 3：東西壞了怎麼講 |
-| 119 | 1 | 提示詞 4：加一個很小的功能 |
-| 120 | 1 | 驗收清單：怎樣算「做完了」 |
+| 119 | 2 | 提示詞 4：加一個很小的功能 |
+| 120 | 2 | 驗收清單：怎樣算「做完了」 |
+| 121 | 1 | 上架：讓它有一個網址 |
 | 125 | 1 | 五個心法，一張圖記完 |
 | 128 | 1 | 方向一：為什麼「一個大檔案」後來會拖住你 |
-| 135 | 1 | 一個真實的下午：三個 AI、五個 bug |
+| 135 | 2 | 一個真實的下午：兩個 AI 交手、五個 bug |
+| 139 | 1 | 真正有效的那一步：實跑 |
 | 142 | 1 | 三種提示詞（複製就能用） |
 
 ## 3. 術語口徑
@@ -215,10 +223,10 @@
 | 疊代 | 16 | 11 | `迭代` × 0 ✓ |
 | 規格書 | 49 | 12 | — |
 | 工程書 | 3 | 3 | — |
-| 全景圖 | 8 | 3 | `全景流程圖` × 0 ✓ |
+| 全景圖 | 10 | 3 | `全景流程圖` × 0 ✓ |
 | 提示詞 | 17 | 6 | — |
 | 造物者 | 13 | 10 | — |
-| 鐵律 | 45 | 12 | — |
+| 鐵律 | 46 | 12 | — |
 | 引擎 | 12 | 5 | — |
 
 **並存用語**（兩種說法都對，只記數量，不是錯誤）：
@@ -233,8 +241,7 @@
 
 | 數字說法 | 總次數 | 出現在 |
 | :--- | ---: | :--- |
-| 74 次 | 3 | part1-mindset-slides.md×1, part4-build-and-ship-slides.md×1, part5-closing-slides.md×1 |
-| 49 次 | 1 | part1-mindset-slides.md×1 |
+| 74 次 | 2 | part4-build-and-ship-slides.md×1, part5-closing-slides.md×1 |
 | 58 張 | 1 | part1-mindset-slides.md×1 |
 | 15 輪 | 19 | part0-shock-slides.md×3, part1-mindset-slides.md×1, part3-five-days-sprint-slides.md×1, part4-build-and-ship-slides.md×3, part4-spec-and-prompts-slides.md×10, part7-methodology-slides.md×1 |
 | 6 張 | 11 | part1-card-growth-slides.md×2, part1-mindset-slides.md×3, part2-habits-and-prompts-slides.md×1, part3-pitfalls-and-qa-slides.md×1, part4-spec-and-prompts-slides.md×4 |
@@ -244,9 +251,8 @@
 | 六個步驟 | 4 | part3-shipping-and-wrap-slides.md×2, part3-testing-and-multiplayer-slides.md×2 |
 | 四道閘門 | 2 | part5-closing-slides.md×1, part7-methodology-slides.md×1 |
 | 三條鐵律 | 9 | part1-card-growth-slides.md×1, part1-mindset-slides.md×2, part3-five-days-sprint-slides.md×1, part4-build-and-ship-slides.md×1, part4-spec-and-prompts-slides.md×2, part5-closing-slides.md×2 |
-| 26 版 | 3 | part5-closing-slides.md×2, part7-methodology-slides.md×1 |
 | 七條 | 3 | part3-pitfalls-and-qa-slides.md×1, part3-shipping-and-wrap-slides.md×1, part5-closing-slides.md×1 |
-| 五項 | 11 | ai-cross-review.md×2, part3-pitfalls-and-qa-slides.md×3, part4-build-and-ship-slides.md×5, part5-closing-slides.md×1 |
+| 五項 | 10 | ai-cross-review.md×2, part3-pitfalls-and-qa-slides.md×3, part4-build-and-ship-slides.md×4, part5-closing-slides.md×1 |
 
 ## 5. Step 編號系統
 
@@ -259,8 +265,8 @@
 | Step2 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md |
 | Step3 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md |
 | Step4 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md, part4-build-and-ship-slides.md |
-| Step5 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md, part4-build-and-ship-slides.md |
-| Step6 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md |
+| Step5 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md |
+| Step6 | part3-shipping-and-wrap-slides.md, part3-testing-and-multiplayer-slides.md, part4-build-and-ship-slides.md |
 
 ## 6. 渲染產物同步
 
