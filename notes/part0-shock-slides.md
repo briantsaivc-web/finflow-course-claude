@@ -18,7 +18,7 @@ header: "FinFlow 實戰心法"
   <div class="box red"><strong>AI 施工隊</strong><br>刻程式・調版面・修 Bug</div>
 </div>
 
-- **核心承諾**：不懂代碼，也能獨立產出多人連線遊戲
+- **核心承諾**：不懂程式碼，也能獨立產出多人連線遊戲
 
 ---
 

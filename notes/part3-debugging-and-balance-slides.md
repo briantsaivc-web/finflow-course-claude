@@ -106,7 +106,7 @@ header: "FinFlow 實戰心法 | 第三部・5 天衝刺實作"
 ---
 
 <!-- 第 71 頁 -->
-# 面對改壞代碼的終極武器：Git 降落傘
+# 面對改壞程式碼的終極武器：Git 降落傘
 
 <div class="lead">當 AI 把功能越修越爛時，果斷放棄並一鍵還原。</div>
 
@@ -114,7 +114,7 @@ header: "FinFlow 實戰心法 | 第三部・5 天衝刺實作"
   <div class="box red">
     <strong>陷入死胡同的陷阱</strong><br>
     為修一個小 bug 改動十處<br>
-    <i>對話越來越長，代碼徹底失控崩潰</i>
+    <i>對話越來越長，程式碼徹底失控崩潰</i>
   </div>
   <div class="arrow">➔</div>
   <div class="box blue">
