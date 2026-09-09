@@ -72,14 +72,15 @@
 <tr>
 <td style="text-align:left">8/30</td>
 <td style="text-align:left">8</td>
-<td style="text-align:left">死結修復、三欄重整、三人實測、互動教學</td>
+<td style="text-align:left">修好卡死不能繼續的狀況、三欄重整、三人實測、互動教學</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li>沒有哪一天是「做一個大功能」。<span class="highlight">最多的那天做了 14 件小事</span></li>
 <li>跬步就是半步。這五天沒有哪一步是大步，但走到了很遠的地方</li>
-<li>而且沒有停：從第一版到今天累計 <b>74 份</b>，版號 v1.0 → <b>v2.52.0</b></li>
+<li>而且沒有停：從第一版到今天累計 <b>74 份</b>變更說明，版號 v1.0 → <b>v2.52.0</b></li>
+<li><b>一份變更說明＝一個版號</b>，所以後面說「74 版」跟這裡是同一件事</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・疊代節奏與 UI 演進" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="3" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・疊代節奏與 UI 演進;--theme:finflow-clean;" data-marpit-pagination-total="13">
@@ -104,6 +105,7 @@
     <i>包括「我原本想錯了」</i>
   </div>
 </div>
+<p><b>寫在哪裡？</b>最省事：貼在 GitHub 每次 Commit 的說明欄；內容長就另存一個 <code>變更記錄.md</code> 放同一個資料夾。</p>
 <ul>
 <li>第三段是最容易被省略、也最有價值的一段。FinFlow 每一份變更說明都有它</li>
 <li>它逼你誠實：<span class="highlight">寫不出「未預期發現」，通常是你沒仔細看</span></li>
@@ -168,12 +170,12 @@
 <tr>
 <td style="text-align:left">S17 v2.22.0</td>
 <td style="text-align:left">8/30</td>
-<td style="text-align:left">三欄重整；中央那疊改用<strong>定位錨點</strong>，不再用百分比</td>
+<td style="text-align:left">三欄重整；中央那疊改用<b>固定座標對齊</b>，不再用畫面百分比</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>v2.16.1 那次特別值得看：<strong>只換畫法，遊戲規則一行都沒動</strong>——這是下下頁那句話的伏筆</li>
+<li>v2.16.1 那次特別值得看：<strong>只換畫法，遊戲規則一行都沒動</strong>——怎麼證明？見<b>第 81 頁</b></li>
 <li>四次改版沒有一次是「重做」，每次都只動一塊。這就是冰山水面下的樣子</li>
 </ul>
 </section>
@@ -181,7 +183,7 @@
 <header>FinFlow 實戰心法 | 第三部・疊代節奏與 UI 演進</header>
 
 <h1 id="%E5%9B%9E%E5%88%B0%E5%86%B0%E5%B1%B1%E4%BD%A0%E6%AD%A3%E5%9C%A8%E6%B0%B4%E9%9D%A2%E4%B8%8B">回到冰山：你正在水面下</h1>
-<div class="lead">連改了 74 個版本的 FinFlow，光一個盤面就改了四次才定型。</div>
+<div class="lead">連改了 74 版的 FinFlow，光一個盤面就改了四次才定型。</div>
 <div class="grid">
   <div class="box red">
     <strong>你會有的感覺</strong><br />
@@ -267,11 +269,11 @@
 <div class="box blue">
 <strong>這句話可以直接複製</strong><br /><br />
 「請你證明這次改動<b>只有畫面變了</b>，遊戲規則的數字都沒有變。<br />
-請跑一批模擬，改動前後逐局比對，把結果告訴我。」
+請用<b>完全相同的亂數種子與起始條件</b>，改動前後各跑一批模擬、逐局比對，把結果告訴我。」
 </div>
 <ul>
 <li>FinFlow 真的做過：改版面前後各跑 <strong>500 局</strong>，逐局比對現金、淨值、被動收入、支出、資產負債筆數、破產、夢想進度等十幾個欄位</li>
-<li>結果寫在變更說明裡：<span class="highlight">不同 0／500，逐位元完全相同</span></li>
+<li>結果寫在變更說明裡：<span class="highlight">500 局裡有 0 局不一樣</span>——完全一致</li>
 <li>你不用看得懂那些欄位。你只需要看得懂「0／500」這個數字</li>
 </ul>
 </section>
@@ -392,7 +394,7 @@
 <header>FinFlow 實戰心法 | 第三部・疊代節奏與 UI 演進</header>
 
 <h1 id="%E4%BD%A0%E7%9A%84-ui-%E8%AA%BF%E6%95%B4%E5%B7%A5%E5%85%B7%E7%AE%B1">你的 UI 調整工具箱</h1>
-<div class="lead">三個馬上能用的做法，不用學任何新軟體。</div>
+<div class="lead">前面三個技巧之外，再給三個馬上能用的做法，不用學任何新軟體。</div>
 <div class="grid">
   <div class="box">
     <strong>① 草稿用手邊的</strong><br />

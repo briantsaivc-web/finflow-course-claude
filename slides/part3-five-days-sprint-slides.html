@@ -12,7 +12,7 @@
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
 <h1 id="%E4%BA%94%E5%A4%A9%E8%A1%9D%E5%88%BA%E5%BE%9E%E9%9B%B6%E5%88%B0%E5%8F%AF%E7%8E%A9%E5%8E%9F%E5%9E%8B">五天衝刺：從零到可玩原型</h1>
-<div class="lead">每天只守一個主戰場，不把今天的精力預支給明天。</div>
+<div class="lead">這是<b>五個階段</b>，不是五個日曆日——一次只守一個主戰場，做完才進下一個。</div>
 <table>
 <thead>
 <tr>
@@ -23,27 +23,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>第一天</strong></td>
+<td style="text-align:left"><strong>階段一</strong></td>
 <td style="text-align:left">核心閉環</td>
 <td style="text-align:left">骰子、移動、薪資、破產判定跑得通</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>第二天</strong></td>
+<td style="text-align:left"><strong>階段二</strong></td>
 <td style="text-align:left">資料注入</td>
 <td style="text-align:left">擴充 20 張職業與基礎機會卡</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>第三天</strong></td>
+<td style="text-align:left"><strong>階段三</strong></td>
 <td style="text-align:left">機制深化</td>
 <td style="text-align:left">引入三級記帳制與財務分錄</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>第四天</strong></td>
+<td style="text-align:left"><strong>階段四</strong></td>
 <td style="text-align:left">體驗重構</td>
 <td style="text-align:left">介面拋光、排查通知與跑版</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>第五天</strong></td>
+<td style="text-align:left"><strong>階段五</strong></td>
 <td style="text-align:left">數值收斂</td>
 <td style="text-align:left">千局模擬測試、平衡性收口</td>
 </tr>
@@ -51,13 +51,14 @@
 </table>
 <ul>
 <li>節奏勝於速度，每一步都踏在可驗證的程式碼基線上</li>
-<li>這五個階段涵蓋 <b>S1～S20b</b>、共 49 份變更說明；實際交付是<span class="highlight">交錯進行</span>的，逐日流水帳見頁 74</li>
+<li>五個階段涵蓋 <b>第 1～20 批</b>、共 49 份變更說明，總共花了六個日曆日（8/25 深夜開工）</li>
+<li><span class="highlight">實際交付是交錯進行的</span>，不是一天做完一階段——真實逐日流水帳見頁 74</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="2" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
-<h1 id="%E7%AC%AC%E4%B8%80%E5%A4%A9%E8%B7%91%E9%80%9A%E5%96%AE%E6%A9%9F%E6%9C%80%E5%B0%8F%E9%96%89%E7%92%B0">第一天：跑通單機最小閉環</h1>
+<h1 id="%E9%9A%8E%E6%AE%B5%E4%B8%80%E8%B7%91%E9%80%9A%E5%96%AE%E6%A9%9F%E6%9C%80%E5%B0%8F%E9%96%89%E7%92%B0">階段一：跑通單機最小閉環</h1>
 <div class="lead">不求精美，只要「擲骰、扣錢、走完一圈」沒有報錯。</div>
 <div class="grid">
   <div class="box">
@@ -79,31 +80,32 @@
   </div>
 </div>
 <ul>
-<li><strong>第一天驗收標準</strong>：全手動玩一局，確認迴圈可以正常結束</li>
+<li><strong>第一句可以直接貼</strong>：<code>請寫一個單一 HTML 檔的遊戲：24 格環形棋盤，按鈕擲骰後方塊會移動，經過起點加薪水，現金歸零就結束。</code></li>
+<li><strong>這一階段的驗收標準</strong>：全手動玩一局，確認迴圈可以正常結束</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="3" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
-<h1 id="%E7%AC%AC%E4%BA%8C%E5%A4%A9%E8%B3%87%E6%96%99%E9%A9%85%E5%8B%95%E7%9A%84%E5%A8%81%E5%8A%9B">第二天：資料驅動的威力</h1>
-<div class="lead">卡片是卡片、規則是規則，加卡片絕不動遊戲引擎。</div>
+<h1 id="%E9%9A%8E%E6%AE%B5%E4%BA%8C%E8%B3%87%E6%96%99%E9%A9%85%E5%8B%95%E7%9A%84%E5%A8%81%E5%8A%9B">階段二：資料驅動的威力</h1>
+<div class="lead">卡片是卡片、規則是規則；加一張卡，絕不能動到算錢的那段程式。</div>
 <div class="grid">
   <div class="box">
     <strong>傳統硬寫陷阱</strong><br />
-    把卡片效果寫死在 if-else 程式碼中<br />
+    每張卡的效果都寫死在程式的判斷式裡<br />
     <i>加一張新卡就要重寫整個遊戲</i>
   </div>
   <div class="arrow">➔</div>
   <div class="box blue">
     <strong>資料驅動架構</strong><br />
-    卡片只是一張純資料表 (JSON)<br />
+    卡片只是一張獨立清單（JSON，一種電腦看得懂的表格寫法）<br />
     <i>「名稱、成本、月收益、技能需求」</i>
   </div>
   <div class="arrow">➔</div>
   <div class="box red">
     <strong>極速擴充成果</strong><br />
     半小時內灌入 20 張在地職業<br />
-    <i>引擎核心程式碼一字未動</i>
+    <i>算錢的核心程式一字未動</i>
   </div>
 </div>
 <ul>
@@ -113,7 +115,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="4" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
-<h1 id="%E7%AC%AC%E4%B8%89%E5%A4%A9%E8%B2%A1%E5%8B%99%E6%89%8B%E6%84%9F%E7%9A%84%E6%B7%B1%E5%BA%A6%E9%9B%95%E7%90%A2">第三天：財務手感的深度雕琢</h1>
+<h1 id="%E9%9A%8E%E6%AE%B5%E4%B8%89%E8%B2%A1%E5%8B%99%E6%89%8B%E6%84%9F%E7%9A%84%E6%B7%B1%E5%BA%A6%E9%9B%95%E7%90%A2">階段三：財務手感的深度雕琢</h1>
 <div class="lead">將真實生活中的財務習慣，無縫轉化為遊戲規則。</div>
 <div class="grid">
   <div class="box">
@@ -124,24 +126,25 @@
   <div class="arrow">➔</div>
   <div class="box blue">
     <strong>三級記帳制</strong><br />
-    新手手動記 ➔ 熟練解鎖半自動<br />
-    <i>後期晉升投資人全自動記帳</i>
+    新手全自動 ➔ 熟練改成自己分類<br />
+    <i>高階才是自己記＋系統稽核</i>
   </div>
   <div class="arrow">➔</div>
   <div class="box red">
-    <strong>情商指標</strong><br />
-    高壓工作扣健康指標<br />
+    <strong>健康指標</strong><br />
+    高壓工作會扣健康<br />
     <i>有錢但健康歸零依然失敗</i>
   </div>
 </div>
 <ul>
+<li>三級的方向是<b>越熟練、系統幫你做得越少</b>——完整拆解見頁 82</li>
 <li>好玩的本質，是讓機制懲罰現實中的投機、獎勵好習慣</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="5" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
-<h1 id="%E9%87%8D%E6%A7%8B%E7%A4%BA%E7%AF%84%E6%AF%8F%E7%AD%86%E9%87%91%E9%8C%A2%E8%AE%8A%E5%8B%95%E5%BF%85%E7%94%A2%E7%94%9F%E6%97%A5%E8%A8%98%E5%B8%B3">重構示範：每筆金錢變動必產生日記帳</h1>
+<h1 id="%E6%94%B9%E9%80%A0%E7%A4%BA%E7%AF%84%E6%AF%8F%E7%AD%86%E9%87%91%E9%8C%A2%E8%AE%8A%E5%8B%95%E9%83%BD%E8%A6%81%E7%95%99%E4%B8%80%E7%AD%86%E5%B8%B3">改造示範：每筆金錢變動都要留一筆帳</h1>
 <div class="lead">會計分錄是底線，每一塊錢流向都必須說得出由來。</div>
 <table>
 <thead>
@@ -160,7 +163,7 @@
 <tr>
 <td style="text-align:left"><strong>每月發薪日</strong></td>
 <td style="text-align:left">現金加 5 萬、扣 3 萬</td>
-<td style="text-align:left">產生薪資收入分錄 +5 萬、生活雜支分錄 -3 萬</td>
+<td style="text-align:left">借：現金 5 萬／貸：薪資收入 5 萬；借：生活支出 3 萬／貸：現金 3 萬</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>年終結算</strong></td>
@@ -170,7 +173,8 @@
 </tbody>
 </table>
 <ul>
-<li>當程式碼帳目對不上時，日記帳就是最好的除錯對帳單</li>
+<li>「借／貸」是會計的記法：<strong>一筆錢從哪來、到哪去，各記一次</strong>，兩邊加總必須相等</li>
+<li>當帳目對不上時，這份流水帳就是最好的除錯對帳單</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="6" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
@@ -182,12 +186,12 @@
   <div class="box">
     <strong>AI 提出的妥協提案</strong><br />
     「日記帳牽涉到底層結構，<br />
-    不如我們先用變數直接加減？」
+    不如我們先用一個數字直接加減就好？」
   </div>
   <div class="arrow">➔</div>
   <div class="box red">
     <strong>人類造物者的把關</strong><br />
-    「不行。三條鐵律不能碰，<br />
+    「不行。<b>三條鐵律</b>（第 17 頁）不能碰，<br />
     架構麻煩也要把日記帳做完整。」
   </div>
 </div>
@@ -198,8 +202,8 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="7" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
-<h1 id="%E7%AC%AC%E5%9B%9B%E5%A4%A9%E9%AB%94%E9%A9%97%E9%87%8D%E6%A7%8B%E8%88%87%E4%BB%8B%E9%9D%A2%E6%8B%8B%E5%85%89">第四天：體驗重構與介面拋光</h1>
-<div class="lead">功能做完只是 60 分，資訊層級分明才能稱為作品。</div>
+<h1 id="%E9%9A%8E%E6%AE%B5%E5%9B%9B%E4%BB%8B%E9%9D%A2%E9%87%8D%E6%95%B4%E8%88%87%E7%B4%B0%E7%AF%80%E6%89%93%E7%A3%A8">階段四：介面重整與細節打磨</h1>
+<div class="lead">功能做完只是 60 分，畫面讓人一眼知道該看哪裡，才能稱為作品。</div>
 <div class="grid">
   <div class="box">
     <strong>資訊超載盤面</strong><br />
@@ -226,12 +230,14 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="FinFlow 實戰心法 | 第三部・5 天衝刺實作" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="8" style="--paginate:true;--header:FinFlow 實戰心法 | 第三部・5 天衝刺實作;--theme:finflow-clean;" data-marpit-pagination-total="8">
 <header>FinFlow 實戰心法 | 第三部・5 天衝刺實作</header>
 
-<h1 id="%E9%9A%8E%E6%AE%B5%E5%9B%9E%E9%A1%A7%E5%89%8D%E5%9B%9B%E5%A4%A9%E5%BB%BA%E7%AB%8B%E7%9A%84%E8%B3%87%E7%94%A2">階段回顧：前四天建立的資產</h1>
-<div class="lead">此時你手上的不是空想，而是一個隨點隨玩的實體軟體。</div>
+<h1 id="%E9%9A%8E%E6%AE%B5%E5%9B%9E%E9%A1%A7%E5%89%8D%E5%9B%9B%E5%80%8B%E9%9A%8E%E6%AE%B5%E5%BB%BA%E7%AB%8B%E7%9A%84%E8%B3%87%E7%94%A2">階段回顧：前四個階段建立的資產</h1>
+<div class="lead">作者走完前四個階段時，手上已經不是空想，而是一個隨點隨玩的軟體。</div>
 <ul>
-<li><strong>穩固骨架</strong>：完成單機 15 輪財務模擬，勝利條件嚴密收口</li>
-<li><strong>豐富內容</strong>：20 個職業、數十張機會與意外卡片全數入庫</li>
-<li><strong>無價歷程</strong>：累積了數十個 Git 存檔點，隨時能說出每個機制的演進由來</li>
+<li><strong>階段一・穩固骨架</strong>：完成單機 15 輪財務模擬，勝利條件嚴密收口</li>
+<li><strong>階段二・豐富內容</strong>：20 個職業、數十張機會與意外卡片全數入庫</li>
+<li><strong>階段三・帳目可查</strong>：每一塊錢的進出都留了流水帳，對不上就查得出來</li>
+<li><strong>階段四・介面成形</strong>：三欄佈局定案，玩家知道該看哪裡、該按哪裡</li>
+<li><strong>額外收穫</strong>：數十個 Git 存檔點，隨時能說出每個機制的演進由來</li>
 </ul>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
