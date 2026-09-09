@@ -38,6 +38,11 @@
 <td style="text-align:left">一輪審一個部，改完、驗完，才進下一部</td>
 </tr>
 <tr>
+<td style="text-align:left"><strong>卡住的岔路</strong></td>
+<td style="text-align:left">問「遊戲團隊怎麼分工」</td>
+<td style="text-align:left">問「<strong>出版社怎麼分工</strong>」：讀者、編輯、事實查核、通讀</td>
+</tr>
+<tr>
 <td style="text-align:left"><strong>交叉抓錯</strong></td>
 <td style="text-align:left">三個 AI 互相打臉</td>
 <td style="text-align:left">三個角色互不知情，我逐條回查原文裁決</td>
@@ -45,7 +50,7 @@
 <tr>
 <td style="text-align:left"><strong>四道閘門</strong></td>
 <td style="text-align:left">回歸測試、變更說明、備份、落地驗證</td>
-<td style="text-align:left">引述回查、每批留指紋、台帳腳本、渲染確認</td>
+<td style="text-align:left">每批重跑檢查表、變更說明、原稿留底、渲染出來看過</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>成品・上線</strong></td>
@@ -55,15 +60,15 @@
 </tbody>
 </table>
 <ul>
-<li><span class="highlight">一格都沒有換</span>——換掉的只有「怎麼算做好」那一欄，跟第七部說的一樣</li>
-<li>全部發生在書寫完之後：<strong>七輪、17 份外部報告</strong>。這一部就是那個過程的紀錄</li>
+<li><strong>七格一格都沒有換</strong>，換掉的只有<span class="highlight">每一格「怎麼算做好」</span>——跟第七部說的一樣</li>
+<li>全部發生在書寫完之後：<strong>七輪、17 份 AI 獨立審查報告</strong>。這一部就是那個過程的紀錄</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="FinFlow 實戰心法 | 第八部・實證" data-class="dense" data-theme="finflow-clean" lang="POSIX" class="dense" data-marpit-pagination="2" style="--paginate:true;--header:FinFlow 實戰心法 | 第八部・實證;--class:dense;--theme:finflow-clean;" data-marpit-pagination-total="10">
 <header>FinFlow 實戰心法 | 第八部・實證</header>
 
-<h1 id="%E6%B2%92%E6%9C%89%E5%AF%A6%E8%B7%91%E5%8F%AF%E4%BB%A5%E7%95%B6%E8%A3%81%E5%88%A4%E7%9A%84%E6%99%82%E5%80%99">沒有「實跑」可以當裁判的時候</h1>
-<div class="lead">第六部靠實跑分勝負：程式跑一次，誰對誰錯當場見真章。但多數工作沒有這種奢侈品。</div>
+<h1 id="%E6%8F%9B%E7%9A%84%E4%B8%8D%E6%98%AF%E6%96%B9%E6%B3%95%E6%98%AF%E8%AD%89%E6%93%9A%E9%95%B7%E4%BB%80%E9%BA%BC%E6%A8%A3">換的不是方法，是證據長什麼樣</h1>
+<div class="lead">第六部的三條底線全部保留：獨立審、附證據、分歧由人裁。第八部新增的不是第二套交叉抓錯，而是換一種證據。</div>
 <table>
 <thead>
 <tr>
@@ -75,18 +80,18 @@
 <tbody>
 <tr>
 <td style="text-align:left">審的是</td>
-<td style="text-align:left">它<strong>會不會跑</strong></td>
-<td style="text-align:left">它<strong>講得對不對</strong></td>
+<td style="text-align:left">可以執行的行為與機制</td>
+<td style="text-align:left">文字主張、結構與一致性</td>
 </tr>
 <tr>
-<td style="text-align:left">有沒有客觀真值</td>
-<td style="text-align:left"><strong>有</strong>——跑一次就知道</td>
-<td style="text-align:left"><strong>沒有</strong>——沒得跑</td>
+<td style="text-align:left"><strong>主要硬證據</strong></td>
+<td style="text-align:left"><strong>實跑、測試、原始碼</strong></td>
+<td style="text-align:left"><strong>原文、來源、算式、索引、腳本</strong></td>
 </tr>
 <tr>
-<td style="text-align:left">誰當裁判</td>
-<td style="text-align:left">實跑結果（頁 139）</td>
-<td style="text-align:left">只能靠<strong>角色分工 ＋ 逐條回查原文</strong></td>
+<td style="text-align:left">判不動的部分</td>
+<td style="text-align:left">由人裁決</td>
+<td style="text-align:left">由人裁決</td>
 </tr>
 <tr>
 <td style="text-align:left">失敗長怎樣</td>
@@ -96,16 +101,16 @@
 </tbody>
 </table>
 <ul>
+<li>第六部<strong>不是只有「跑一次」</strong>：它的反向質詢提示詞（頁 142）也要求「逐條核對原始碼，附行數」——那已經是文件式的核對</li>
+<li>差別在於<strong>手上有什麼可以當硬證據</strong>。程式有實跑（頁 139）；一份報告沒有，就只剩原文、來源與算式</li>
 <li>你的報告、企劃、合約、簡報——<span class="highlight">全都屬於右邊那一欄</span>。這才是大多數人的實際處境</li>
-<li>沒有真值可以裁決的時候，<strong>代替品是「讓不同角色各自看，然後每一條都要拿出原文」</strong></li>
-<li>這一部教的就是右邊那一欄怎麼做</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="FinFlow 實戰心法 | 第八部・實證" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="3" style="--paginate:true;--header:FinFlow 實戰心法 | 第八部・實證;--theme:finflow-clean;" data-marpit-pagination-total="10">
 <header>FinFlow 實戰心法 | 第八部・實證</header>
 
-<h1 id="%E4%B8%83%E5%80%8B%E6%AD%A5%E9%A9%9F%E9%80%99%E4%B8%80%E8%BC%AA%E5%AF%A6%E9%9A%9B%E6%80%8E%E9%BA%BC%E8%B7%91%E7%9A%84">七個步驟：這一輪實際怎麼跑的</h1>
-<div class="lead">從「想驗證這套方法通不通用」到「把過程寫回書裡」。</div>
+<h1 id="%E5%AF%A6%E8%AD%89%E7%B4%80%E9%8C%84%E9%80%99%E6%AC%A1%E5%AF%A9%E6%9B%B8%E6%80%8E%E9%BA%BC%E8%B7%91">實證紀錄：這次審書怎麼跑</h1>
+<div class="lead">這<b>不是另一套七步流程</b>（那個在第六部頁 141）。這是把第七部的方法用在這本書上時，實際發生的七個動作。</div>
 <table>
 <thead>
 <tr>
@@ -118,7 +123,7 @@
 <tr>
 <td style="text-align:right">①</td>
 <td style="text-align:left">決定拿這本書當題目</td>
-<td style="text-align:left">要證明流程通用，最硬的驗證就是<strong>拿它審自己</strong></td>
+<td style="text-align:left">要檢驗這套流程能不能跨到別的工作，最硬的做法就是<strong>拿它審自己</strong></td>
 </tr>
 <tr>
 <td style="text-align:right">②</td>
@@ -132,8 +137,8 @@
 </tr>
 <tr>
 <td style="text-align:right">④</td>
-<td style="text-align:left">量了之後改成 <strong>1 個 AI・1 個角色</strong></td>
-<td style="text-align:left">下一頁講量出了什麼</td>
+<td style="text-align:left">量了之後改成<b>每個角色只用 1 個 AI</b></td>
+<td style="text-align:left">角色數量不變，是同一個角色不再找兩家做。下一頁講為什麼</td>
 </tr>
 <tr>
 <td style="text-align:right">⑤</td>
@@ -193,9 +198,10 @@
 </tbody>
 </table>
 <ul>
-<li><strong>換模型，一半以上是重工；換角色，八成以上是新東西。</strong><span class="highlight">角色決定你會找到什麼，模型幾乎不影響</span></li>
-<li>所以配置從 2 AI × 2 角色改成 <b>1 AI・1 角色</b>：<strong>要幾個角色，就開幾個視窗</strong>，不用同一個角色找兩家做</li>
-<li><strong>但重疊率只是診斷，不是砍格子的理由</strong>：兩個「讀者」重疊 45%，各自獨得的真問題卻一樣多——其中一個抓到「代碼」是中國大陸用語、影響全課 22 處，另一個完全沒看到</li>
+<li>換角色時兩份的重疊只有 <strong>6.5% 與 26%</strong>；換模型時是 <strong>45% 與 44%</strong>。<span class="highlight">在這次的樣本裡，角色差異帶來的新東西，明顯多過換模型</span></li>
+<li>所以配置改成<strong>每個角色只用 1 個 AI</strong>：角色數量不變，是同一個角色不再找兩家做</li>
+<li><strong>但這是有代價的取捨，不是「模型不重要」</strong>：兩個「讀者」雖然重疊 45%，各自獨得的真問題卻一樣多——其中一個抓到「代碼」是中國大陸用語、<strong>影響全課 23 處跨 9 個檔</strong>，另一個完全沒看到</li>
+<li><b>誠實講清楚：省一半成本，代價是可能漏掉單一模型的盲點。</b>資源有限時先加角色；<span class="highlight">但關鍵的那一章，值得讓同一個角色再找第二家看一次</span></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="FinFlow 實戰心法 | 第八部・實證" data-class="dense" data-theme="finflow-clean" lang="POSIX" class="dense" data-marpit-pagination="5" style="--paginate:true;--header:FinFlow 實戰心法 | 第八部・實證;--class:dense;--theme:finflow-clean;" data-marpit-pagination-total="10">
@@ -242,10 +248,10 @@
 <div class="lead">不是每次都要開新的，但有一種情況一定要。</div>
 <div class="grid">
   <div class="box blue">
-    <strong>同一個層次：可以續用</strong><br />
+    <strong>同一個層次：風險較低</strong><br />
     同一個對話串重複貼不同章節<br />
-    <i>實測 0 污染</i><br />
-    <b>因為 prompt 自己帶齊了背景</b>
+    <i>這次沒觀察到明顯干擾</i><br />
+    <b>提示詞每次重帶背景，<br />可能是原因</b>
   </div>
   <div class="arrow">➔</div>
   <div class="box red">
@@ -256,8 +262,9 @@
   </div>
 </div>
 <ul>
-<li>這件事的判準很簡單：<span class="highlight">你換的是「材料」，續用沒差；你換的是「用什麼眼睛看」，就要新視窗</span></li>
-<li>同一輪的不同角色，也<strong>一律各自開新視窗、互不知情</strong>——否則第二個角色會順著第一個的結論走，這就退化成一份報告</li>
+<li>判準：<span class="highlight">你換的是「材料」，風險較低；你換的是「用什麼眼睛看」，一定要新視窗</span></li>
+<li><strong>但左邊那格只是一次事後觀察，不足以推翻「新章節就開新視窗」這個預設</strong>。要徹底避開錨定，每一章各開一個最穩</li>
+<li>同一輪的不同角色，沿用第六部的盲審原則：<strong>各自新視窗、互不知情</strong>——避免第二個角色被第一個的結論帶著走</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="FinFlow 實戰心法 | 第八部・實證" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="7" style="--paginate:true;--header:FinFlow 實戰心法 | 第八部・實證;--theme:finflow-clean;" data-marpit-pagination-total="10">
@@ -267,24 +274,22 @@
 <div class="lead">AI 很會讀，但不會數。這兩件事要分開派工。</div>
 <div class="grid">
   <div class="box red">
-    <strong>AI 數數出錯的三次</strong><br />
-    <i>把 58 張卡數成 46 張</i><br />
-    （漏掉一整包 12 張）<br />
-    <i>把檔案行號當成頁碼</i><br />
-    <i>我自己把 5＋3 對照成 7 項</i>
+    <strong>數數出錯的三次</strong><br />
+    <b>AI 兩次</b>：把 58 張卡數成 46 張<br />（漏掉一整包 12 張）；<br />把檔案行號當成頁碼<br />
+    <b>我自己一次</b>：對照一張七項清單，<br />寫成「五項做了、三項沒做」<br />（5＋3＝8，不是 7）
   </div>
   <div class="arrow">➔</div>
   <div class="box blue">
-    <strong>改派給一支腳本</strong><br />
+    <strong>改派給一支小程式</strong><br />
     每一頁的頁碼與標題<br />
     每一處「頁 N」指不指得到<br />
-    正規用語 vs 不該出現的變體<br />
-    <i>一條指令重跑，結果可複驗</i>
+    該用的詞有沒有被寫成別的<br />
+    <i>一條指令重跑，別人也跑得出同樣結果</i>
   </div>
 </div>
 <ul>
-<li>這支腳本產出一份<strong>台帳</strong>，進版控。每改一批就重跑一次、比對差異——<span class="highlight">跨部回歸就跑不掉</span></li>
-<li>它第一次跑就抓到兩處：一個統一過的用語漏了首頁、一個過期兩批的更新日期</li>
+<li>它產出一份<strong>全書清單</strong>（每一頁、每一處引用、每一個該統一的詞），跟著書一起存檔。每改一批就重跑、比對差異——<span class="highlight">改了前面弄壞後面，就跑不掉</span></li>
+<li>它第一次跑就抓到兩處：一個統一過的用語漏了首頁沒改、一個過期兩批的更新日期</li>
 <li><strong>判準</strong>：只要「數得出來、比得出來」的，就別問 AI。把 AI 的注意力留給它真正強的——讀懂意思</li>
 </ul>
 </section>
@@ -292,7 +297,7 @@
 <header>FinFlow 實戰心法 | 第八部・實證</header>
 
 <h1 id="%E8%AE%93-ai-%E4%B8%8D%E4%BA%82%E7%B7%A8%E7%9A%84%E5%85%A9%E6%A2%9D%E8%A6%8F%E5%89%87">讓 AI 不亂編的兩條規則</h1>
-<div class="lead">同一個模型，加了兩句話之後，七輪沒有再捏造過一次。</div>
+<div class="lead">加了兩句話之後，這七輪沒有再出現捏造引述。</div>
 <div class="grid">
   <div class="box red">
     <strong>之前發生過什麼</strong><br />
@@ -310,8 +315,8 @@
 </div>
 <ul>
 <li>加上之後：<strong>七輪、17 份報告，0 筆捏造引述</strong>。只出過一次位置引用錯誤（把行號當頁碼）</li>
-<li>為什麼有效：<span class="highlight">先告知會被查，品質就上去了</span>——這跟人一模一樣</li>
-<li>但<strong>告知不等於免查</strong>。我還是每一條都回查原檔——差別是回查後幾乎都對得上，成本低很多</li>
+<li><strong>這是前後觀察，不是對照實驗</strong>：我沒有另外跑一批「不加這兩句」的來比，所以不能斷定就是這兩句造成的。<span class="highlight">但值得你加上去，成本是零</span></li>
+<li>而且<strong>告知不等於免查</strong>。我還是每一條都回查原檔——差別是回查後幾乎都對得上，成本低很多</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="FinFlow 實戰心法 | 第八部・實證" data-theme="finflow-clean" lang="POSIX" data-marpit-pagination="9" style="--paginate:true;--header:FinFlow 實戰心法 | 第八部・實證;--theme:finflow-clean;" data-marpit-pagination-total="10">
@@ -329,14 +334,14 @@
   <div class="arrow">➔</div>
   <div class="box blue">
     <strong>換一個殼就通了</strong><br />
-    同一家的模型，<br />裝在開發工具裡<br />
+    同一家的模型，<br />換成裝在開發工具裡的版本<br />
     <b>直接抓得到，照樣把報告做完</b>
   </div>
 </div>
 <ul>
-<li><strong>為什麼？我不知道</strong>，那是對方的設定，我查不到——這一頁只寫我實際看到的事</li>
-<li>所以「某某 AI 做不到」這句話通常是錯的。正確的說法是<span class="highlight">「某某 AI 的<strong>這個介面</strong>做不到」</span></li>
-<li>附帶一個數據點：那一輪用的是<strong>便宜的快速型號</strong>，照樣把事實查核做完了——再一次印證<b>決定品質的是角色，不是模型等級</b></li>
+<li><strong>為什麼？我不知道</strong>，那是對方的設定，我查不到——這一頁只寫我實際看到的事（<strong>一次</strong>，不是統計）</li>
+<li>但可以帶走一條操作原則：<span class="highlight">不要把「這個介面做不到」直接推成「這個 AI 做不到」</span>。先換一個入口確認，再下結論</li>
+<li>附帶一提：那一輪（事實查核）用的是<strong>便宜的快速型號</strong>，照樣把 41 條宣稱比對完。至少表示<b>這個任務不一定需要高階型號</b>——但不能因此推論模型等級普遍不重要</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="FinFlow 實戰心法 | 第八部・實證" data-class="dense" data-theme="finflow-clean" lang="POSIX" class="dense" data-marpit-pagination="10" style="--paginate:true;--header:FinFlow 實戰心法 | 第八部・實證;--class:dense;--theme:finflow-clean;" data-marpit-pagination-total="10">
@@ -356,13 +361,13 @@
 <tbody>
 <tr>
 <td style="text-align:left">一個關鍵數字</td>
-<td style="text-align:left">「實跑 24,000 局」</td>
-<td style="text-align:left">沒有腳本、沒有算式，<strong>跟被它批評的那份報告一樣無法回查</strong></td>
+<td style="text-align:left">第六部說「實跑 24,000 局」</td>
+<td style="text-align:left">沒有腳本、沒有算式，<strong>跟它自己批評的那份報告一樣無法回查</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">一個版本編號</td>
 <td style="text-align:left">「第 26 版才學會」</td>
-<td style="text-align:left">那時早就超過 40 版，它指的是<strong>第 26 批</strong></td>
+<td style="text-align:left">一次施工叫一「批」，一次改版叫一「版」，<strong>一批可能交出好幾版</strong>。那時早就超過 40 版，指的其實是<strong>第 26 批</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">一段時間</td>
@@ -377,8 +382,9 @@
 </tbody>
 </table>
 <ul>
-<li><strong>它漏掉的</strong>：六輪、14 份部內報告，<span class="highlight">沒有一份看見跨部矛盾</span>——因為沒有人被指派去讀完整本</li>
-<li>所以最後補了通讀與懷疑論者兩條車道。<strong>你缺的那一類問題，通常不是 AI 不會，是沒有人被派去看那個維度</strong></li>
+<li><strong>它漏掉的</strong>：前六輪、14 份部內報告，<span class="highlight">沒有一份看見跨部矛盾</span>——因為沒有人被指派去讀完整本</li>
+<li>所以第七輪補了三份：<strong>通讀上半、通讀下半、懷疑論者</strong>（14＋3＝17）。<strong>很多漏掉的問題，關鍵往往不是 AI 不會，是沒有人被派去看那個維度</strong></li>
+<li><strong>四份可以直接複製的完整提示詞</strong>（讀者／編輯／懷疑論者／通讀），在圖文版〈用這套方法審它自己〉</li>
 </ul>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
