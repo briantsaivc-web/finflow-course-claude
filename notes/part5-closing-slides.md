@@ -74,10 +74,10 @@ header: "FinFlow 實戰心法 | 第五部・結語與資源包"
   </div>
   <div class="box blue">
     <strong>四份提示詞</strong><br>
-    Step1 生規格書（頁 116）<br>
-    Step2 生程式（頁 117）<br>
-    Step3 抓 bug（頁 118）<br>
-    Step4 加功能（頁 119）
+    提示詞 1 生規格書（頁 116）<br>
+    提示詞 2 生程式（頁 117）<br>
+    提示詞 3 抓 bug（頁 118）<br>
+    提示詞 4 加功能（頁 119）
   </div>
   <div class="box red">
     <strong>驗收用</strong><br>

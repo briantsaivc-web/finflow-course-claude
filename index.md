@@ -85,7 +85,7 @@ layout: default
   <h3>第四部・讀者實作題</h3>
   <p class="sub">照著做，交出你自己的極簡版</p>
   <ul>
-    <li><a href="slides/part4-spec-and-prompts-slides.html">定案規格與 Step1 提示詞</a> <span class="pg">頁 109–116</span></li>
+    <li><a href="slides/part4-spec-and-prompts-slides.html">定案規格與提示詞 1</a> <span class="pg">頁 109–116</span></li>
     <li><a href="slides/part4-build-and-ship-slides.html">做出來、測過、上架：四份可複製的提示詞</a> <span class="pg">頁 117–124</span></li>
   </ul>
 </div>
